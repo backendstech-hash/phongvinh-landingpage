@@ -65,11 +65,11 @@ const config: Config = {
   				'5': 'hsl(var(--chart-5))'
   			},
   		},
-      fontFamily: {
-        cormorant: ['Cormorant Garamond', 'serif'],
-        montserrat: ['Montserrat', 'sans-serif'],
-		poppins: ['Poppins', 'sans-serif']
-      },
+		fontFamily: {
+			cormorant: ['Cormorant Garamond', 'serif'],
+			montserrat: ['Montserrat', 'sans-serif'],
+			poppins: ['Poppins', 'sans-serif']
+		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

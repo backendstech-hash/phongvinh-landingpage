@@ -1,4 +1,5 @@
 "use client";
+
 import { useAppSelector } from '@/app/redux/hook';
 import { translations } from '@/app/services/languages';
 import Image from 'next/image';

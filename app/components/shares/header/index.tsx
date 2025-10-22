@@ -8,6 +8,7 @@ import { PiCaretDownLight, PiCaretRight } from "react-icons/pi";
 import { useAppDispatch, useAppSelector } from "@/app/redux/hook";
 import { setLocale } from "@/app/redux/slices/locale.slice";
 import { translations } from "@/app/services/languages";
+import Link from 'next/link';
 
 export default function Header() {
     const dispatch = useAppDispatch();
@@ -22,22 +23,26 @@ export default function Header() {
                 <div className='flex gap-2 cursor-pointer my-1'>
                     <Image src={"/logo/logo.svg"} className='w-[45px] max-xl:w-[30px]' width={45} height={95} alt='woodcraft' />
                     <div className='flex flex-col my-auto mt-3 max-xl:mt-1.5 text-brown-1'>
-                        <p className='font-cormorant font-semibold text-4xl max-xl:text-2xl max-xl:mt-1 leading-[26px] text-center text-brown-1 text-nowrap'>PHONG VĨNH</p>
+                        <p className='font-cormorant font-extrabold text-4xl max-xl:text-2xl max-xl:mt-1 leading-[26px] text-center text-brown-1 text-nowrap'>PHONG VĨNH</p>
                         <p className='font-montserrat text-[13px] text-center font-light text-nowrap max-xl:hidden'>WATER & WASTEWATER SOLUTIONS</p>
                     </div>
                 </div>
                 <div className='flex gap-8 text-brown-1 max-xl:hidden h-full'>
-                    <p className='cursor-pointer text-nowrap font-montserrat font-medium h-full flex flex-col justify-center mr-1'>{lang.header.HOME}</p>
+                    <Link href={"/"}>
+                        <p className='cursor-pointer text-nowrap font-montserrat font-medium h-full flex flex-col justify-center mr-1'>{lang.header.HOME}</p>
+                    </Link>
                     <div className='h-full flex flex-col justify-center items-center relative group'>
-                        <p 
-                            className='cursor-pointer text-nowrap font-montserrat font-medium my-auto flex' 
-                            onMouseEnter={() => {
-                                document.body.style.overflow = "hidden";
-                            }}
-                            onMouseLeave={() => {
-                                document.body.style.overflow = "auto";
-                            }}
-                        >{lang.header.PRODUCTS}<PiCaretDownLight className='my-auto w-4 text-black'/></p>
+                        <Link href={"/products"}>
+                            <p 
+                                className='cursor-pointer text-nowrap font-montserrat font-medium my-auto flex' 
+                                onMouseEnter={() => {
+                                    document.body.style.overflow = "hidden";
+                                }}
+                                onMouseLeave={() => {
+                                    document.body.style.overflow = "auto";
+                                }}
+                            >{lang.header.PRODUCTS}<PiCaretDownLight className='my-auto w-4 text-black'/></p>
+                        </Link>
                         <span className="absolute bottom-0 w-0 h-[4px] bg-black transition-all duration-200 group-hover:w-full"></span>
                         <div 
                             className="fixed z-20 inset-0 h-fit top-[71px] w-full flex items-center justify-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300"

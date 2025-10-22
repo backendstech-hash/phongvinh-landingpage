@@ -1,20 +1,11 @@
 "use client";
 import Image from 'next/image';
-import RightSidebarMobile from '../components/shares/header/components/menuSideBarRight';
-import { PiCaretDownLight, PiCaretRight, PiPhoneLight } from 'react-icons/pi';
-import { CiMail } from "react-icons/ci";
-import { FaChartBar, FaQuoteLeft, FaTachometerAlt, FaTools, FaUsers } from "react-icons/fa";
+import { FaChartBar, FaTachometerAlt, FaTools, FaUsers } from "react-icons/fa";
 import HomeCarousel from '../components/shares/homeCarousel';
 import './style.css';
 import ServiceCarousel from '../components/shares/serviceCarousel';
 import FeatureCard from '../components/shares/featherCard';
 import { GoShieldCheck } from 'react-icons/go';
-import { TfiLinkedin } from "react-icons/tfi";
-import { BsTwitterX } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { AiOutlineGlobal } from "react-icons/ai";
-import Footer from '../components/shares/footer';
 import { useAppSelector } from '../redux/hook';
 import { translations } from '../services/languages';
 
@@ -24,21 +15,7 @@ export default function Home() {
     const lang = translations[locale];
 
     return (
-        <div className="w-full h-screen bg-white">
-            {/* header */}
-            
-
-            {/* <div className='w-full h-[600px] max-xl:h-[300px] max-sm:h-[350px] bg-cover flex justify-center bg-center bg-no-repeat relative' style={{ "backgroundImage": "url('/bg/bg4.png')" }}>
-                <div className='absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/75 to-slate-900/40'></div>
-                <div className='flex flex-col gap-3 w-[75vw] max-xl:w-[95vw] my-auto'>
-                    <div className='flex flex-col'>
-                        <p className='text-white font-poppins max-xl:text-3xl text-6xl font-bold z-10 text-left leading-[50px]'>10 Years manufacturering of</p>
-                        <p className='block z-10 max-xl:text-3xl font-poppins font-bold leading-[80px] text-6xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400'>Wedge Wire Screen</p>
-                    </div>
-                    <p className='text-white font-poppins text-[20px] max-xl:text-sm z-10 md:max-w-[50%]'>Our experience in these industries results in cost-effective solutions tailored to our customer's requirements</p>
-                    <div className='px-5 py-3 mt-4 rounded text-white max-xl:text-xs bg-gradient-to-r from-blue-500 to-cyan-500 w-fit h-fit z-10 font-bold'>CONTACT US</div>
-                </div>
-            </div> */}
+        <div className="w-full h-full bg-white">
             <HomeCarousel/>
             <div className='flex flex-col bg-white py-10'>
                 <div className='w-[75vw] max-xl:w-[95vw] mx-auto flex flex-col'>
@@ -74,10 +51,10 @@ export default function Home() {
                 </div>
             </div>
             <div className='w-full h-fit flex pb-5'>
-                <div className='w-[95dvw] grid grid-cols-4 max-sm:grid-cols-2 max-xl:grid-cols-3 gap-5 mx-auto'>
+                <div className='w-[95dvw] grid grid-cols-4 max-sm:grid-cols-2 max-xl:grid-cols-3 gap-5 max-sm:gap-3 mx-auto'>
                     <div className='flex flex-col h-auto col-span-1 cursor-pointer'>
                         <div className='flex-1 overflow-hidden'>
-                            <Image src={'/products/product1.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-110' alt='product1' width={444} height={444}/>
+                            <Image src={'/products/product1.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-\[cubic-bezier\(0\.25,0\.1,0\.25,1\)\] hover:scale-110' alt='product1' width={444} height={444}/>
                         </div>
                         <div className='min-h-[70px] flex gap-2 justify-center items-center bg-gray-100 px-3'>
                             <Image src={'/menuItem/item2.svg'} className='max-lg:w-[50px]' alt='item1' width={90} height={90}/><p className='text-brown-1 font-poppins text-lg font-semibold max-lg:text-sm'>{lang.home.PRODUCT_1}</p>
@@ -85,7 +62,7 @@ export default function Home() {
                     </div>
                     <div className='flex flex-col h-auto col-span-1 cursor-pointer'>
                         <div className='flex-1 overflow-hidden'>
-                            <Image src={'/products/product2.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-110' alt='product1' width={444} height={444}/>
+                            <Image src={'/products/product2.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-\[cubic-bezier\(0\.25,0\.1,0\.25,1\)\] hover:scale-110' alt='product1' width={444} height={444}/>
                         </div>
                         <div className='min-h-[70px] flex gap-2 justify-center items-center  bg-gray-100 px-3'>
                             <Image src={'/menuItem/item3.svg'} alt='item1' width={20} height={20}/><p className='text-brown-1 font-poppins text-lg font-semibold max-lg:text-sm'>{lang.home.PRODUCT_2}</p>
@@ -93,7 +70,7 @@ export default function Home() {
                     </div>
                     <div className='flex flex-col h-auto col-span-1 cursor-pointer'>
                         <div className='flex-1 overflow-hidden'>
-                            <Image src={'/products/product3.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-110' alt='product1' width={444} height={444}/>
+                            <Image src={'/products/product3.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-\[cubic-bezier\(0\.25,0\.1,0\.25,1\)\] hover:scale-110' alt='product1' width={444} height={444}/>
                         </div>
                         <div className='min-h-[70px] flex gap-2 justify-center items-center bg-gray-100 px-3'>
                             <Image src={'/menuItem/item7.svg'} className='max-lg:w-[50px] max-lg:h-[50px]' alt='item1' width={60} height={60}/><p className='text-brown-1 font-poppins text-lg font-semibold max-lg:text-sm'>{lang.home.PRODUCT_3}</p>
@@ -101,7 +78,7 @@ export default function Home() {
                     </div>
                     <div className='flex flex-col h-auto col-span-1 cursor-pointer'>
                         <div className='flex-1 overflow-hidden'>
-                            <Image src={'/products/product4.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-110' alt='product1' width={444} height={444}/>
+                            <Image src={'/products/product4.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-\[cubic-bezier\(0\.25,0\.1,0\.25,1\)\] hover:scale-110' alt='product1' width={444} height={444}/>
                         </div>
                         <div className='min-h-[70px] flex gap-2 justify-center items-center bg-gray-100 px-3'>
                             <Image src={'/menuItem/item9.svg'} className='max-lg:w-[50px] max-lg:h-[50px]' alt='item1' width={50} height={50}/><p className='max-lg:text-sm text-brown-1 font-poppins text-lg font-semibold'>{lang.home.PRODUCT_4}</p>
@@ -109,7 +86,7 @@ export default function Home() {
                     </div>
                     <div className='flex flex-col h-auto col-span-1 cursor-pointer'>
                         <div className='flex-1 overflow-hidden'>
-                            <Image src={'/products/product5.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-110' alt='product1' width={444} height={444}/>
+                            <Image src={'/products/product5.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-\[cubic-bezier\(0\.25,0\.1,0\.25,1\)\] hover:scale-110' alt='product1' width={444} height={444}/>
                         </div>
                         <div className='min-h-[70px] flex gap-2 justify-center items-center bg-gray-100 px-3'>
                             <Image src={'/menuItem/item5.svg'} className='max-lg:w-[50px] max-lg:h-[50px]' alt='item1' width={60} height={60}/><p className='max-lg:text-sm text-brown-1 font-poppins text-lg font-semibold'>{lang.home.PRODUCT_5}</p>
@@ -117,7 +94,7 @@ export default function Home() {
                     </div>
                     <div className='flex flex-col h-auto col-span-1 cursor-pointer'>
                         <div className='flex-1 overflow-hidden'>
-                            <Image src={'/products/product6.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-110' alt='product1' width={444} height={444}/>
+                            <Image src={'/products/product6.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-\[cubic-bezier\(0\.25,0\.1,0\.25,1\)\] hover:scale-110' alt='product1' width={444} height={444}/>
                         </div>
                         <div className='min-h-[70px] flex gap-2 justify-center items-center bg-gray-100 px-3'>
                             <Image src={'/menuItem/item6.svg'} className='max-lg:w-[50px] max-lg:h-[50px]' alt='item1' width={30} height={30}/><p className='max-lg:text-sm text-brown-1 font-poppins text-lg font-semibold'>{lang.home.PRODUCT_6}</p>
@@ -125,7 +102,7 @@ export default function Home() {
                     </div>
                     <div className='flex flex-col h-auto col-span-1 cursor-pointer'>
                         <div className='flex-1 overflow-hidden'>
-                            <Image src={'/products/product7.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-110' alt='product1' width={444} height={444}/>
+                            <Image src={'/products/product7.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-\[cubic-bezier\(0\.25,0\.1,0\.25,1\)\] hover:scale-110' alt='product1' width={444} height={444}/>
                         </div>
                         <div className='min-h-[70px] flex gap-2 justify-center items-center bg-gray-100 px-3'>
                             <Image src={'/menuItem/item8.svg'} alt='item1' width={25} height={25}/><p className='max-lg:text-sm text-brown-1 font-poppins text-lg font-semibold'>{lang.home.PRODUCT_7}</p>
@@ -133,7 +110,7 @@ export default function Home() {
                     </div>
                     <div className='flex flex-col h-auto col-span-1 cursor-pointer'>
                         <div className='flex-1 overflow-hidden'>
-                            <Image src={'/products/product8.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-110' alt='product1' width={444} height={444}/>
+                            <Image src={'/products/product8.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-\[cubic-bezier\(0\.25,0\.1,0\.25,1\)\] hover:scale-110' alt='product1' width={444} height={444}/>
                         </div>
                         <div className='min-h-[70px] flex gap-2 justify-center items-center bg-gray-100 px-3'>
                             <Image src={'/menuItem/item13.svg'} alt='item1' className='max-lg:w-[50px] max-lg:h-[50px]' width={45} height={45}/><p className='max-lg:text-sm text-brown-1 font-poppins text-lg font-semibold'>{lang.home.PRODUCT_8}</p>
@@ -209,7 +186,6 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <Footer/>
         </div>
     );
 }

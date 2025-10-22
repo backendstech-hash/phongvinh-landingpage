@@ -8,6 +8,7 @@ import { AiOutlineGlobal } from "react-icons/ai";
 import { useAppDispatch, useAppSelector } from "@/app/redux/hook";
 import { translations } from "@/app/services/languages";
 import { setLocale } from "@/app/redux/slices/locale.slice";
+import Link from "next/link";
 
 export default function RightSidebarMobile() {
     const [open, setOpen] = useState(false);
@@ -54,16 +55,20 @@ export default function RightSidebarMobile() {
                 </div>
 
                 <nav className="flex flex-col flex-1 gap-4 p-4 text-gray-700 overflow-y-auto">
-                    <p className="cursor-pointer text-brown-1 text-left">{lang.header.HOME}</p>
-                    <p className="cursor-pointer text-brown-1 text-left flex justify-between" onClick={() => setOpenProduct(!openProduct)}>{lang.header.PRODUCTS}
-                        {
-                            openProduct ? (
-                                <PiMinus className="w-5 my-auto h-5 transition-transform duration-300" />
-                            ) : (
-                                <PiPlus className="w-5 my-auto h-5 transition-transform duration-300" />
-                            )
-                        }
-                    </p>
+                    <Link href={"/"}>
+                        <p className="cursor-pointer text-brown-1 text-left">{lang.header.HOME}</p>
+                    </Link>
+                    <Link href={"/product"}>
+                        <p className="cursor-pointer text-brown-1 text-left flex justify-between" onClick={() => setOpenProduct(!openProduct)}>{lang.header.PRODUCTS}
+                            {
+                                openProduct ? (
+                                    <PiMinus className="w-5 my-auto h-5 transition-transform duration-300" />
+                                ) : (
+                                    <PiPlus className="w-5 my-auto h-5 transition-transform duration-300" />
+                                )
+                            }
+                        </p>
+                    </Link>
                     <div className={`transition-all duration-300 overflow-hidden min-h-[460px] ${openProduct ? "max-h-[460px] -my-2" : "!max-h-0 !min-h-0 -my-2"}`}>
                         <div className="w-full min-h-[460px] flex flex-col gap-3 bg-gray-100 p-3">
                             <div className="flex gap-3 text-brown-1 hover:text-blue-1 text-sm cursor-pointer">

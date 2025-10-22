@@ -8,6 +8,9 @@ import viHeader from '@/app/components/shares/header/languages/vi.json';
 import enFooter from '@/app/components/shares/footer/languages/en.json';
 import viFooter from '@/app/components/shares/footer/languages/vi.json';
 
+import enProduct from '@/app/products/languages/en.json';
+import viProduct from '@/app/products/languages/vi.json';
+
 
 export const locales = ['en', 'vi'] as const
 export const defaultLocale = 'en'
@@ -16,11 +19,13 @@ export const translations = {
     en: {
         home: enHome,
         header: enHeader,
-        footer: enFooter
+        footer: enFooter,
+        product: enProduct
     },
     vi: {
         home: viHome,
         header: viHeader,
-        footer: viFooter
+        footer: viFooter,
+        product: viProduct
     },
 }
