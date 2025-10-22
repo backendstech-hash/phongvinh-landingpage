@@ -5,10 +5,16 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { PiArrowRight, PiArrowRightBold } from "react-icons/pi";
+import { PiArrowRightBold } from "react-icons/pi";
 import Image from 'next/image';
+import { useAppSelector } from "@/app/redux/hook";
+import { translations } from "@/app/services/languages";
 
 export default function ServiceCarousel() {
+    const { locale } = useAppSelector(storage => storage.locale);
+
+    const lang = translations[locale];
+
     return (
         <div className="w-[99dvw] mx-auto relative group mt-8">
             {/* Custom Previous Button */}
@@ -62,7 +68,7 @@ export default function ServiceCarousel() {
 
                     <div className="p-4 flex flex-col items-center gap-2">
                         <h3 className="text-blue-1 font-poppins text-lg font-semibold text-center">
-                            Power Generation
+                            {lang.home.SERVICE_1}
                         </h3>
                         <span className="text-blue-600 text-2xl leading-none"><PiArrowRightBold className="w-6 h-6"/></span>
                     </div>
@@ -82,7 +88,7 @@ export default function ServiceCarousel() {
 
                     <div className="p-4 flex flex-col items-center gap-2">
                         <h3 className="text-blue-1 font-poppins text-lg font-semibold text-center">
-                            Mining
+                            {lang.home.SERVICE_2}
                         </h3>
                         <span className="text-blue-600 text-2xl leading-none"><PiArrowRightBold className="w-6 h-6"/></span>
                     </div>
@@ -102,7 +108,7 @@ export default function ServiceCarousel() {
 
                     <div className="p-4 flex flex-col items-center gap-2">
                         <h3 className="text-blue-1 font-poppins text-lg font-semibold text-center">
-                            Pharmaceutical
+                            {lang.home.SERVICE_3}
                         </h3>
                         <span className="text-blue-600 text-2xl leading-none"><PiArrowRightBold className="w-6 h-6"/></span>
                     </div>
@@ -122,7 +128,7 @@ export default function ServiceCarousel() {
 
                     <div className="p-4 flex flex-col items-center gap-2">
                         <h3 className="text-blue-1 font-poppins text-lg font-semibold text-center">
-                            Pulp & Paper
+                            {lang.home.SERVICE_4}
                         </h3>
                         <span className="text-blue-600 text-2xl leading-none"><PiArrowRightBold className="w-6 h-6"/></span>
                     </div>
@@ -142,7 +148,7 @@ export default function ServiceCarousel() {
 
                     <div className="p-4 flex flex-col items-center gap-2">
                         <h3 className="text-blue-1 font-poppins text-lg font-semibold text-center">
-                            Agriculture
+                            {lang.home.SERVICE_5}
                         </h3>
                         <span className="text-blue-600 text-2xl leading-none"><PiArrowRightBold className="w-6 h-6"/></span>
                     </div>
@@ -162,7 +168,7 @@ export default function ServiceCarousel() {
 
                     <div className="p-4 flex flex-col items-center gap-2">
                         <h3 className="text-blue-1 font-poppins text-lg font-semibold text-center">
-                            Wastewater Treatment
+                            {lang.home.SERVICE_6}
                         </h3>
                         <span className="text-blue-600 text-2xl leading-none"><PiArrowRightBold className="w-6 h-6"/></span>
                     </div>
@@ -182,7 +188,7 @@ export default function ServiceCarousel() {
 
                     <div className="p-4 flex flex-col items-center gap-2">
                         <h3 className="text-blue-1 font-poppins text-lg font-semibold text-center">
-                            Oil, Gas & Petrochemical
+                            {lang.home.SERVICE_7}
                         </h3>
                         <span className="text-blue-600 text-2xl leading-none"><PiArrowRightBold className="w-6 h-6"/></span>
                     </div>
@@ -202,7 +208,7 @@ export default function ServiceCarousel() {
 
                     <div className="p-4 flex flex-col items-center gap-2">
                         <h3 className="text-blue-1 font-poppins text-lg font-semibold text-center">
-                            Food & Beverage
+                            {lang.home.SERVICE_8}
                         </h3>
                         <span className="text-blue-600 text-2xl leading-none"><PiArrowRightBold className="w-6 h-6"/></span>
                     </div>
@@ -222,7 +228,7 @@ export default function ServiceCarousel() {
 
                     <div className="p-4 flex flex-col items-center gap-2">
                         <h3 className="text-blue-1 font-poppins text-lg font-semibold text-center">
-                            Water Treatment
+                            {lang.home.SERVICE_9}
                         </h3>
                         <span className="text-blue-600 text-2xl leading-none"><PiArrowRightBold className="w-6 h-6"/></span>
                     </div>
