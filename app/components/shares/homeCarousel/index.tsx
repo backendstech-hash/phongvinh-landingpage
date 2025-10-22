@@ -81,7 +81,7 @@ export default function HomeCarousel() {
                         <div className='absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/55 to-slate-900/25'></div>
                         <div className='flex flex-col w-[75vw] max-xl:w-[95vw] my-auto'>
                             <div className='flex flex-col'>
-                                <p className='text-white font-poppins max-xl:text-3xl text-6xl font-bold z-10 text-left leading-[20px] max-xl:text-center'>Wide Ranges Products</p>
+                                <p className='text-white font-poppins max-xl:text-2xl text-6xl font-bold z-10 text-left leading-[20px] max-xl:text-center'>Wide Ranges Products</p>
                                 <p className='block z-10 max-xl:text-lg font-poppins font-medium leading-[80px] italic text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 max-xl:w-[80%] max-xl:text-center max-xl:mx-auto'>Satisfy Your Projects & Distribution Needs</p>
                             </div>
                             <div className='px-5 py-2 max-xl:mt-4 rounded text-white max-xl:text-xs bg-gradient-to-r from-blue-500 to-cyan-500 w-fit h-fit z-10 font-bold max-xl:mx-auto'>CONTACT US</div>

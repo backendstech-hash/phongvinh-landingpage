@@ -128,7 +128,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className='h-full flex flex-col justify-center items-center relative group'>
-                            <p className='cursor-pointer text-nowrap font-montserrat font-medium my-auto flex'>Services<PiCaretDownLight className='my-auto w-4 text-black'/></p>
+                            <p className='cursor-pointer text-nowrap font-montserrat font-medium my-auto flex'>News<PiCaretDownLight className='my-auto w-4 text-black'/></p>
                             <span className="absolute bottom-0 w-0 h-[4px] bg-black transition-all duration-200 group-hover:w-full"></span>
                             <div 
                                 className="fixed z-20 inset-0 h-fit top-[113px] w-full flex items-center justify-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300"
@@ -155,12 +155,12 @@ export default function Home() {
                                             </div>
                                         </div>
                                         <div className='w-full flex flex-col gap-5'>
-                                            <p className='text-blue-1 font-poppins font-semibold text-xl'>SERVICE</p>
+                                            <p className='text-blue-1 font-poppins font-semibold text-xl'>NEWS</p>
                                             <div className='grid grid-cols-3 gap-x-6'>
-                                                <div className='cursor-pointer hover:text-blue-1 py-2.5 font-poppins text-brown-1 col-span-1 border-y-solid border-y-[1px] flex justify-between border-y-black/50'>Technology <PiCaretRight className='my-auto w-4 h-4'/></div>
-                                                <div className='cursor-pointer hover:text-blue-1 py-2.5 font-poppins text-brown-1 col-span-1 border-y-solid border-y-[1px] flex justify-between border-y-black/50'>Download <PiCaretRight className='my-auto w-4 h-4'/></div>
-                                                <div className='cursor-pointer hover:text-blue-1 py-2.5 font-poppins text-brown-1 col-span-1 border-y-solid border-y-[1px] flex justify-between border-y-black/50'>Videos <PiCaretRight className='my-auto w-4 h-4'/></div>
-                                                <div className='cursor-pointer hover:text-blue-1 py-2.5 font-poppins text-brown-1 col-span-1 border-b-solid border-b-[1px] flex justify-between border-b-black/50'>RFQ Forms <PiCaretRight className='my-auto w-4 h-4'/></div>
+                                                <div className='cursor-pointer hover:text-blue-1 py-2.5 font-poppins text-brown-1 col-span-1 border-y-solid border-y-[1px] flex justify-between border-y-black/50'>News & Events<PiCaretRight className='my-auto w-4 h-4'/></div>
+                                                {/* <div className='cursor-pointer hover:text-blue-1 py-2.5 font-poppins text-brown-1 col-span-1 border-y-solid border-y-[1px] flex justify-between border-y-black/50'>News & Events<PiCaretRight className='my-auto w-4 h-4'/></div> */}
+                                                {/* <div className='cursor-pointer hover:text-blue-1 py-2.5 font-poppins text-brown-1 col-span-1 border-y-solid border-y-[1px] flex justify-between border-y-black/50'>Videos<PiCaretRight className='my-auto w-4 h-4'/></div>
+                                                <div className='cursor-pointer hover:text-blue-1 py-2.5 font-poppins text-brown-1 col-span-1 border-b-solid border-b-[1px] flex justify-between border-b-black/50'>RFQ Forms<PiCaretRight className='my-auto w-4 h-4'/></div> */}
                                             </div>
                                         </div>
                                     </div>

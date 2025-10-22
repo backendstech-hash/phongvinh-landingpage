@@ -95,7 +95,7 @@ export default function RightSidebarMobile() {
                             </div>
                         </div>
                     </div>
-                    <p className="cursor-pointer text-brown-1 text-left flex justify-between" onClick={() => setOpenService(!openService)}>Services
+                    <p className="cursor-pointer text-brown-1 text-left flex justify-between" onClick={() => setOpenService(!openService)}>News
                         {
                             openService ? (
                                 <PiMinus className="w-5 my-auto h-5 transition-transform duration-300" />
@@ -104,12 +104,12 @@ export default function RightSidebarMobile() {
                             )
                         }
                     </p>
-                    <div className={`transition-all duration-300 overflow-hidden min-h-[140px] ${openService ? "max-h-[140px] -my-2" : "!max-h-0 !min-h-0 -my-2"}`}>
-                        <div className="w-full min-h-[140px] bg-gray-100 flex flex-col gap-3 p-3">
-                            <p className="text-brown-1 text-sm cursor-pointer hover:text-blue-1">Technology</p>
-                            <p className="text-brown-1 text-sm cursor-pointer hover:text-blue-1">Download</p>
-                            <p className="text-brown-1 text-sm cursor-pointer hover:text-blue-1">Videos</p>
-                            <p className="text-brown-1 text-sm cursor-pointer hover:text-blue-1">RFQ Forms</p>
+                    <div className={`transition-all duration-300 overflow-hidden min-h-[40px] ${openService ? "max-h-[40px] -my-2" : "!max-h-0 !min-h-0 -my-2"}`}>
+                        <div className="w-full min-h-[40px] bg-gray-100 flex flex-col gap-3 p-3">
+                            <p className="text-brown-1 text-sm cursor-pointer hover:text-blue-1">News & Events</p>
+                            {/* <p className="text-brown-1 text-sm cursor-pointer hover:text-blue-1">Download</p> */}
+                            {/* <p className="text-brown-1 text-sm cursor-pointer hover:text-blue-1">Videos</p>
+                            <p className="text-brown-1 text-sm cursor-pointer hover:text-blue-1">RFQ Forms</p> */}
                         </div>
                     </div>
                     <p className='text-white font-bold text-sm h-fit w-full rounded px-4 py-2 mt-2 bg-blue-1 text-nowrap text-center'>CONTACT</p>
