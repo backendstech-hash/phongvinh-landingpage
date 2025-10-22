@@ -55,20 +55,18 @@ export default function RightSidebarMobile() {
                 </div>
 
                 <nav className="flex flex-col flex-1 gap-4 p-4 text-gray-700 overflow-y-auto">
-                    <Link href={"/"}>
+                    <Link href={"/"} onClick={() => setOpen(false)}>
                         <p className="cursor-pointer text-brown-1 text-left">{lang.header.HOME}</p>
                     </Link>
-                    <Link href={"/product"}>
-                        <p className="cursor-pointer text-brown-1 text-left flex justify-between" onClick={() => setOpenProduct(!openProduct)}>{lang.header.PRODUCTS}
-                            {
-                                openProduct ? (
-                                    <PiMinus className="w-5 my-auto h-5 transition-transform duration-300" />
-                                ) : (
-                                    <PiPlus className="w-5 my-auto h-5 transition-transform duration-300" />
-                                )
-                            }
-                        </p>
-                    </Link>
+                    <p className="cursor-pointer text-brown-1 text-left flex justify-between" onClick={() => setOpenProduct(!openProduct)}>{lang.header.PRODUCTS}
+                        {
+                            openProduct ? (
+                                <PiMinus className="w-5 my-auto h-5 transition-transform duration-300" />
+                            ) : (
+                                <PiPlus className="w-5 my-auto h-5 transition-transform duration-300" />
+                            )
+                        }
+                    </p>
                     <div className={`transition-all duration-300 overflow-hidden min-h-[460px] ${openProduct ? "max-h-[460px] -my-2" : "!max-h-0 !min-h-0 -my-2"}`}>
                         <div className="w-full min-h-[460px] flex flex-col gap-3 bg-gray-100 p-3">
                             <div className="flex gap-3 text-brown-1 hover:text-blue-1 text-sm cursor-pointer">
