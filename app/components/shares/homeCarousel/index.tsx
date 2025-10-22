@@ -40,7 +40,7 @@ export default function HomeCarousel() {
                 className="w-full"
             >
                 <SwiperSlide>
-                    <div className='w-full h-[700px] max-xl:h-[300px] max-sm:h-[350px] bg-cover flex justify-center bg-center bg-no-repeat relative' style={{ "backgroundImage": "url('/bg/bg4.png')" }}>
+                    <div className='w-full h-[700px] max-xl:h-[300px] max-sm:h-[350px] bg-cover flex justify-center bg-center bg-no-repeat relative' style={{ "backgroundImage": "url('/bg/bg4.webp')" }}>
                         <div className='absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/55 to-slate-900/25'></div>
                         <div className='flex flex-col gap-3 w-[75vw] max-xl:w-[95vw] my-auto'>
                             <div className='flex flex-col'>
@@ -53,7 +53,7 @@ export default function HomeCarousel() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='w-full h-[700px] max-xl:h-[300px] max-sm:h-[350px] bg-cover flex justify-center bg-center bg-no-repeat relative' style={{ "backgroundImage": "url('/bg/bg5.png')" }}>
+                    <div className='w-full h-[700px] max-xl:h-[300px] max-sm:h-[350px] bg-cover flex justify-center bg-center bg-no-repeat relative' style={{ "backgroundImage": "url('/bg/bg5.webp')" }}>
                         <div className='absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/55 to-slate-900/25'></div>
                         <div className='flex flex-col w-[75vw] max-xl:w-[95vw] my-auto'>
                             <div className='flex flex-col'>
@@ -65,7 +65,7 @@ export default function HomeCarousel() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='w-full h-[700px] max-xl:h-[300px] max-sm:h-[350px] bg-cover flex justify-center bg-center bg-no-repeat relative' style={{ "backgroundImage": "url('/bg/bg6.png')" }}>
+                    <div className='w-full h-[700px] max-xl:h-[300px] max-sm:h-[350px] bg-cover flex justify-center bg-center bg-no-repeat relative' style={{ "backgroundImage": "url('/bg/bg6.webp')" }}>
                         <div className='absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/55 to-slate-900/25'></div>
                         <div className='flex flex-col w-[75vw] max-xl:w-[95vw] my-auto'>
                             <div className='flex flex-col'>
@@ -77,7 +77,7 @@ export default function HomeCarousel() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='w-full h-[700px] max-xl:h-[300px] max-sm:h-[350px] bg-cover flex justify-center bg-center bg-no-repeat relative' style={{ "backgroundImage": "url('/bg/bg7.png')" }}>
+                    <div className='w-full h-[700px] max-xl:h-[300px] max-sm:h-[350px] bg-cover flex justify-center bg-center bg-no-repeat relative' style={{ "backgroundImage": "url('/bg/bg7.webp')" }}>
                         <div className='absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/55 to-slate-900/25'></div>
                         <div className='flex flex-col w-[75vw] max-xl:w-[95vw] my-auto'>
                             <div className='flex flex-col'>

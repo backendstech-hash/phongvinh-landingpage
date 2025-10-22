@@ -52,7 +52,7 @@ export default function ServiceCarousel() {
                     <div className="bg-white hover:bg-gray-100 cursor-pointer rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300 w-[19dvw] max-sm:w-[95dvw] max-lg:w-[49dvw] max-xl:w-[32dvw] max-2xl:w-[24dvw] mx-auto">
                     <div className="overflow-hidden rounded-t-lg">
                         <Image
-                        src="/services/service1.png"
+                        src="/services/service1.webp"
                         alt="Water Treatment"
                         width={400}
                         height={250}
@@ -72,7 +72,7 @@ export default function ServiceCarousel() {
                     <div className="bg-white hover:bg-gray-100 cursor-pointer rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300 w-[19dvw] max-sm:w-[95dvw] max-lg:w-[49dvw] max-xl:w-[32dvw] max-2xl:w-[24dvw] mx-auto">
                     <div className="overflow-hidden rounded-t-lg">
                         <Image
-                        src="/services/service2.png"
+                        src="/services/service2.webp"
                         alt="Mining"
                         width={400}
                         height={250}
@@ -92,7 +92,7 @@ export default function ServiceCarousel() {
                     <div className="bg-white hover:bg-gray-100 cursor-pointer rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300 w-[19dvw] max-sm:w-[95dvw] max-lg:w-[49dvw] max-xl:w-[32dvw] max-2xl:w-[24dvw] mx-auto">
                     <div className="overflow-hidden rounded-t-lg">
                         <Image
-                        src="/services/service3.png"
+                        src="/services/service3.webp"
                         alt="Water Treatment"
                         width={400}
                         height={250}
@@ -112,7 +112,7 @@ export default function ServiceCarousel() {
                     <div className="bg-white hover:bg-gray-100 cursor-pointer rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300 w-[19dvw] max-sm:w-[95dvw] max-lg:w-[49dvw] max-xl:w-[32dvw] max-2xl:w-[24dvw] mx-auto">
                     <div className="overflow-hidden rounded-t-lg">
                         <Image
-                        src="/services/service4.png"
+                        src="/services/service4.webp"
                         alt="Pulp & Paper"
                         width={400}
                         height={250}
@@ -132,7 +132,7 @@ export default function ServiceCarousel() {
                     <div className="bg-white hover:bg-gray-100 cursor-pointer rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300 w-[19dvw] max-sm:w-[95dvw] max-lg:w-[49dvw] max-xl:w-[32dvw] max-2xl:w-[24dvw] mx-auto">
                     <div className="overflow-hidden rounded-t-lg">
                         <Image
-                        src="/services/service5.png"
+                        src="/services/service5.webp"
                         alt="Agriculture"
                         width={400}
                         height={250}
@@ -152,7 +152,7 @@ export default function ServiceCarousel() {
                     <div className="bg-white hover:bg-gray-100 cursor-pointer rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300 w-[19dvw] max-sm:w-[95dvw] max-lg:w-[49dvw] max-xl:w-[32dvw] max-2xl:w-[24dvw] mx-auto">
                     <div className="overflow-hidden rounded-t-lg">
                         <Image
-                        src="/services/service6.png"
+                        src="/services/service6.webp"
                         alt="Wastewater Treatment"
                         width={400}
                         height={250}
@@ -172,7 +172,7 @@ export default function ServiceCarousel() {
                     <div className="bg-white hover:bg-gray-100 cursor-pointer rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300 w-[19dvw] max-sm:w-[95dvw] max-lg:w-[49dvw] max-xl:w-[32dvw] max-2xl:w-[24dvw] mx-auto">
                     <div className="overflow-hidden rounded-t-lg">
                         <Image
-                        src="/services/service7.png"
+                        src="/services/service7.webp"
                         alt="Oil, Gas & Petrochemical"
                         width={400}
                         height={250}
@@ -192,7 +192,7 @@ export default function ServiceCarousel() {
                     <div className="bg-white hover:bg-gray-100 cursor-pointer rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300 w-[19dvw] max-sm:w-[95dvw] max-lg:w-[49dvw] max-xl:w-[32dvw] max-2xl:w-[24dvw] mx-auto">
                     <div className="overflow-hidden rounded-t-lg">
                         <Image
-                        src="/services/service8.png"
+                        src="/services/service8.webp"
                         alt="Food & Beverage"
                         width={400}
                         height={250}
@@ -212,7 +212,7 @@ export default function ServiceCarousel() {
                     <div className="bg-white hover:bg-gray-100 cursor-pointer rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300 w-[19dvw] max-sm:w-[95dvw] max-lg:w-[49dvw] max-xl:w-[32dvw] max-2xl:w-[24dvw] mx-auto">
                     <div className="overflow-hidden rounded-t-lg">
                         <Image
-                        src="/services/service9.png"
+                        src="/services/service9.webp"
                         alt="Water Treatment"
                         width={400}
                         height={250}

@@ -223,7 +223,7 @@ export default function Home() {
                 <div className='w-[95dvw] grid grid-cols-4 max-sm:grid-cols-2 max-xl:grid-cols-3 gap-5 mx-auto'>
                     <div className='flex flex-col h-auto col-span-1 cursor-pointer'>
                         <div className='flex-1 overflow-hidden'>
-                            <Image src={'/products/product1.png'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-110' alt='product1' width={444} height={444}/>
+                            <Image src={'/products/product1.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-110' alt='product1' width={444} height={444}/>
                         </div>
                         <div className='min-h-[70px] flex gap-2 justify-center items-center bg-gray-100 px-3'>
                             <Image src={'/menuItem/item2.svg'} className='max-lg:w-[50px]' alt='item1' width={90} height={90}/><p className='text-brown-1 font-poppins text-lg font-semibold max-lg:text-sm'>Wedge Wire Screen Panels</p>
@@ -231,7 +231,7 @@ export default function Home() {
                     </div>
                     <div className='flex flex-col h-auto col-span-1 cursor-pointer'>
                         <div className='flex-1 overflow-hidden'>
-                            <Image src={'/products/product2.png'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-110' alt='product1' width={444} height={444}/>
+                            <Image src={'/products/product2.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-110' alt='product1' width={444} height={444}/>
                         </div>
                         <div className='min-h-[70px] flex gap-2 justify-center items-center  bg-gray-100 px-3'>
                             <Image src={'/menuItem/item3.svg'} alt='item1' width={20} height={20}/><p className='text-brown-1 font-poppins text-lg font-semibold max-lg:text-sm'>Wedge Wire Screen Panels</p>
@@ -239,7 +239,7 @@ export default function Home() {
                     </div>
                     <div className='flex flex-col h-auto col-span-1 cursor-pointer'>
                         <div className='flex-1 overflow-hidden'>
-                            <Image src={'/products/product3.png'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-110' alt='product1' width={444} height={444}/>
+                            <Image src={'/products/product3.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-110' alt='product1' width={444} height={444}/>
                         </div>
                         <div className='min-h-[70px] flex gap-2 justify-center items-center bg-gray-100 px-3'>
                             <Image src={'/menuItem/item7.svg'} className='max-lg:w-[50px] max-lg:h-[50px]' alt='item1' width={60} height={60}/><p className='text-brown-1 font-poppins text-lg font-semibold max-lg:text-sm'>Wedge Wire Screen Panels</p>
@@ -247,7 +247,7 @@ export default function Home() {
                     </div>
                     <div className='flex flex-col h-auto col-span-1 cursor-pointer'>
                         <div className='flex-1 overflow-hidden'>
-                            <Image src={'/products/product4.png'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-110' alt='product1' width={444} height={444}/>
+                            <Image src={'/products/product4.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-110' alt='product1' width={444} height={444}/>
                         </div>
                         <div className='min-h-[70px] flex gap-2 justify-center items-center bg-gray-100 px-3'>
                             <Image src={'/menuItem/item9.svg'} className='max-lg:w-[50px] max-lg:h-[50px]' alt='item1' width={50} height={50}/><p className='max-lg:text-sm text-brown-1 font-poppins text-lg font-semibold'>Wedge Wire Screen Panels</p>
@@ -255,7 +255,7 @@ export default function Home() {
                     </div>
                     <div className='flex flex-col h-auto col-span-1 cursor-pointer'>
                         <div className='flex-1 overflow-hidden'>
-                            <Image src={'/products/product5.png'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-110' alt='product1' width={444} height={444}/>
+                            <Image src={'/products/product5.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-110' alt='product1' width={444} height={444}/>
                         </div>
                         <div className='min-h-[70px] flex gap-2 justify-center items-center bg-gray-100 px-3'>
                             <Image src={'/menuItem/item5.svg'} className='max-lg:w-[50px] max-lg:h-[50px]' alt='item1' width={60} height={60}/><p className='max-lg:text-sm text-brown-1 font-poppins text-lg font-semibold'>Wedge Wire Screen Panels</p>
@@ -263,7 +263,7 @@ export default function Home() {
                     </div>
                     <div className='flex flex-col h-auto col-span-1 cursor-pointer'>
                         <div className='flex-1 overflow-hidden'>
-                            <Image src={'/products/product6.png'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-110' alt='product1' width={444} height={444}/>
+                            <Image src={'/products/product6.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-110' alt='product1' width={444} height={444}/>
                         </div>
                         <div className='min-h-[70px] flex gap-2 justify-center items-center bg-gray-100 px-3'>
                             <Image src={'/menuItem/item6.svg'} className='max-lg:w-[50px] max-lg:h-[50px]' alt='item1' width={30} height={30}/><p className='max-lg:text-sm text-brown-1 font-poppins text-lg font-semibold'>Wedge Wire Screen Panels</p>
@@ -271,7 +271,7 @@ export default function Home() {
                     </div>
                     <div className='flex flex-col h-auto col-span-1 cursor-pointer'>
                         <div className='flex-1 overflow-hidden'>
-                            <Image src={'/products/product7.png'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-110' alt='product1' width={444} height={444}/>
+                            <Image src={'/products/product7.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-110' alt='product1' width={444} height={444}/>
                         </div>
                         <div className='min-h-[70px] flex gap-2 justify-center items-center bg-gray-100 px-3'>
                             <Image src={'/menuItem/item8.svg'} alt='item1' width={25} height={25}/><p className='max-lg:text-sm text-brown-1 font-poppins text-lg font-semibold'>Wedge Wire Screen Panels</p>
@@ -279,7 +279,7 @@ export default function Home() {
                     </div>
                     <div className='flex flex-col h-auto col-span-1 cursor-pointer'>
                         <div className='flex-1 overflow-hidden'>
-                            <Image src={'/products/product8.png'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-110' alt='product1' width={444} height={444}/>
+                            <Image src={'/products/product8.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-110' alt='product1' width={444} height={444}/>
                         </div>
                         <div className='min-h-[70px] flex gap-2 justify-center items-center bg-gray-100 px-3'>
                             <Image src={'/menuItem/item13.svg'} alt='item1' className='max-lg:w-[50px] max-lg:h-[50px]' width={45} height={45}/><p className='max-lg:text-sm text-brown-1 font-poppins text-lg font-semibold'>Wedge Wire Screen Panels</p>
