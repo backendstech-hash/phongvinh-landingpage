@@ -170,7 +170,9 @@ export default function Header() {
                             <span className='flex gap-1 whitespace-nowrap text-[16px] cursor-pointer font-poppins text-brown-1' onClick={() => dispatch(setLocale('en')) }>🇬🇧 <p className='text-center'>EN</p></span>
                         </div>
                     </div>
-                    <p className='text-white font-extrabold text-sm font-poppins h-fit my-auto rounded-lg px-6 py-2 bg-blue-1 text-nowrap cursor-pointer uppercase'>{lang.header.CONTACT}</p>
+                    <Link href="/contact" className="my-auto">
+                        <p className='text-white font-extrabold text-sm font-poppins h-fit my-auto rounded-lg px-6 py-2 bg-blue-1 text-nowrap cursor-pointer uppercase'>{lang.header.CONTACT}</p>
+                    </Link>
                 </div>
                 <RightSidebarMobile/>
             </div>

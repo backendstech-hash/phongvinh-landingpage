@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { BsTwitterX } from 'react-icons/bs';
 import { FaFacebookF, FaYoutube } from 'react-icons/fa';
 import { TfiLinkedin } from 'react-icons/tfi';
+import Link from 'next/link';
 
 export default function Footer() {
     const { locale } = useAppSelector(storage => storage.locale);
@@ -26,7 +27,9 @@ export default function Footer() {
                     <div className='flex gap-8 text-brown-1 h-full max-sm:hidden'>
                         <p className='cursor-pointer text-nowrap font-montserrat font-medium h-full flex flex-col justify-center mr-1 hover:underline text-white'>{lang.footer.PRODUCTS}</p>
                         <p className='cursor-pointer text-nowrap font-montserrat font-medium h-full flex flex-col justify-center mr-1 hover:underline text-white'>{lang.footer.NEWS}</p>
-                        <p className='cursor-pointer text-nowrap font-montserrat font-medium h-full flex flex-col justify-center mr-1 hover:underline text-white'>{lang.footer.CONTACT}</p>
+                        <Link href="/contact">
+                            <p className='cursor-pointer text-nowrap font-montserrat font-medium h-full flex flex-col justify-center mr-1 hover:underline text-white'>{lang.footer.CONTACT}</p>
+                        </Link>
                     </div>
                 </div>
                 <div className='flex justify-between gap-8 max-lg:flex-col mt-5'>

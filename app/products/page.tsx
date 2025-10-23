@@ -14,10 +14,10 @@ export default function Products() {
         <div className="relative w-full h-[50px] flex items-center py-8 bg-blue-3">
             <div className="flex items-center gap-2 text-sm text-white w-[95vw] mx-auto font-medium">
                 <Link href="/" className="text-white text-[16px] max-sm:text-sm font-poppins transition-colors hover:underline">
-                    Home
+                    {lang.product.HOME}
                 </Link>
                 <ChevronRight size={14} />
-                <span className="text-white text-[16px] max-sm:text-sm font-poppins">Products</span>
+                <span className="text-white text-[16px] max-sm:text-sm font-poppins">{lang.product.PRODUCTS}</span>
             </div>
         </div>
         <div className='w-full h-full flex py-5'>

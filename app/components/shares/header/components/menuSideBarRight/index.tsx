@@ -130,7 +130,9 @@ export default function RightSidebarMobile() {
                             <p className="text-brown-1 text-sm cursor-pointer hover:text-blue-1">RFQ Forms</p> */}
                         </div>
                     </div>
-                    <p className='text-white font-bold text-sm h-fit w-full rounded px-4 py-2 mt-2 bg-blue-1 text-nowrap text-center uppercase'>{lang.header.CONTACT}</p>
+                    <Link href="/contact" onClick={() => setOpen(false)}>
+                        <p className='text-white font-bold text-sm h-fit w-full rounded px-4 py-2 mt-2 bg-blue-1 text-nowrap text-center uppercase'>{lang.header.CONTACT}</p>
+                    </Link>
                 </nav>
             </div>
         </div>

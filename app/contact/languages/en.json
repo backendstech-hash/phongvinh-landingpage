@@ -1,0 +1,22 @@
+{
+    "HOME": "Home",
+    "CONTACT": "Contact",
+    "TITLE": "Contact for Quotation & Assistance",
+    "SUBTITLE": "We're committed to supporting you every step of the way. If you have any questions, require additional information, or need personalized assistance, please don't hesitate to contact our dedicated team. We're here to help you find the perfect solution for your unique requirements.",
+    "EXPORTER_PAYEE": "Exporter & Payee",
+    "MANUFACTURER": "Manufacturer",
+    "ADDREDD": "Address",
+    "TELEPHONE": "Telephone",
+    "MOBILE": "Mobile",
+    "EMAIL": "E-mail",
+    "FOLLOW_US": "Follow us:",
+    "CONTACT_US": "Contact us:",
+    "CONTACT_TITLE": "Keep learning our latest news and get the latest quotation!",
+    "YOUR_NAME": "Your name",
+    "YOUR_EMAIL": "Your e-mail",
+    "COUNTRY_CODE_PHONE_NUMBER": "Country code + phone number",
+    "MESSAGE": "Message",
+    "SUBMIT": "Submit",
+    "SEND_SUCCESS": "Submitted successfully!",
+    "SEND_FAIL": "Message sending failed!!. Please try again later."
+}
