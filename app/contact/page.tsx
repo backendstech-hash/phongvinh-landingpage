@@ -16,7 +16,7 @@ export default function Contact() {
     const { locale } = useAppSelector(storage => storage.locale);
     const lang = translations[locale];
     const [message, setMessage] = useState("");
-    const maxLength = 500; // giới hạn ký tự
+    const maxLength = 1000; // giới hạn ký tự
 
     // ✅ Định nghĩa schema với Yup
     const schema = yup.object({
