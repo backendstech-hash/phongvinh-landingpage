@@ -16,11 +16,22 @@ export async function sendDiscordMessage(data: {
     if (!DISCORD_CHANNEL_ID) {
         throw new Error("DISCORD_CHANNEL_ID not configured");
     }
-
+    
     const now = new Date();
-    const timestamp = `========= ${now.toLocaleString()} ==========\n`;
+    const timeString = now.toLocaleString('vi-VN', {
+        timeZone: 'Asia/Ho_Chi_Minh',
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false, // 24h format
+    });
 
-    const content = `${timestamp}\n👤 **Name**: ${data.name}\n✉️ **Email**: ${data.email}\n📞 **Phone**: ${data.phone}\n📝 **Message**: ${data.message}\n\n======================================`;
+    const timestamp = `========= ${timeString} (VN) ==========\n`;
+
+    const content = `${timestamp}\n👤 **Name**: ${data.name}\n✉️ **Email**: ${data.email}\n📞 **Phone**: ${data.phone}\n📝 **Message**: ${data.message}\n\n==========================================`;
 
 
     const res = await fetch(`https://discord.com/api/v10/channels/${DISCORD_CHANNEL_ID}/messages`, {
