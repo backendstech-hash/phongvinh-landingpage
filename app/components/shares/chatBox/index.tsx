@@ -17,6 +17,25 @@ export default function ChatBox() {
     const { sessionId, username, messages } = useAppSelector(store => store.chat);
     const containerMessageRef = useRef<HTMLDivElement>(null);
 
+    // ngăn scroll body khi mở box chat trên mobile
+    useEffect(() => {
+        if (!isOpen) {
+            document.body.style.overflow = "";
+            return;
+        }
+
+        // Chỉ áp dụng khi màn hình nhỏ hơn 640px (Tailwind `sm`)
+        if (window.matchMedia("(max-width: 640px)").matches) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+
+        return () => {
+            document.body.style.overflow = "";
+        };
+    }, [isOpen]);
+
     const startChat = useCallback(async () => {
         if (!nameInput.length) return;
         // handleUserChat(name);
