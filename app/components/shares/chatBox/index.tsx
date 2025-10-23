@@ -11,7 +11,7 @@ import TextareaAutosize from "react-textarea-autosize";
 
 export default function ChatBox() {
     const dispatch = useAppDispatch();
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
     const [nameInput, setNameInput] = useState("");
     const [messageInput, setMessageInput] = useState("");
     const { sessionId, username, messages } = useAppSelector(store => store.chat);
