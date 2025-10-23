@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { PiX } from "react-icons/pi";
 import { IoChatboxEllipsesOutline } from "react-icons/io5";
-import { createThreadForUser, PullMessage, sendMessageToThread } from "@/app/services/discord/chatBot";
+import { createThreadForUser, sendMessageToThread } from "@/app/services/discord/chatBot";
 import { useAppDispatch, useAppSelector } from "@/app/redux/hook";
 import { pushNewMessage, setSessionId, setUsername } from "@/app/redux/slices/chat.slice";
 import { VscSend } from "react-icons/vsc";
