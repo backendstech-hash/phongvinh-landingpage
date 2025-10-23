@@ -17,13 +17,13 @@ export default function Footer() {
         <div className='w-full flex bg-blue-3 py-5'>
             <div className='w-[75vw] max-xl:w-[95vw] flex flex-col mx-auto'>
                 <div className='flex justify-between border-b-solid border-b-[1px] py-3 max-sm:py-0 max-sm:border-none border-b-white/50'>
-                    <div className='flex gap-2 cursor-pointer my-1'>
+                    <Link href="/" className='flex gap-2 cursor-pointer my-1'>
                         <Image src={"/logo/logo.svg"} className='max-sm:w-[25px] w-[30px]' width={45} height={95} alt='woodcraft' />
                         <div className='flex flex-col my-auto'>
                             <p className='font-cormorant font-semibold max-sm:text-2xl text-3xl leading-[26px] text-center text-white text-nowrap'>PHONG VĨNH</p>
                             <p className='font-montserrat max-sm:text-[9px] text-[11px] text-center text-white font-light text-nowrap'>WATER & WASTEWATER SOLUTIONS</p>
                         </div>
-                    </div>
+                    </Link>
                     <div className='flex gap-8 text-brown-1 h-full max-sm:hidden'>
                         <p className='cursor-pointer text-nowrap font-montserrat font-medium h-full flex flex-col justify-center mr-1 hover:underline text-white'>{lang.footer.PRODUCTS}</p>
                         <p className='cursor-pointer text-nowrap font-montserrat font-medium h-full flex flex-col justify-center mr-1 hover:underline text-white'>{lang.footer.NEWS}</p>

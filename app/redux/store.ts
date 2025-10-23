@@ -1,10 +1,11 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { configureStore } from "@reduxjs/toolkit";
-import alertReducers, { IAlertState } from './slices/alert.slice';
+// import alertReducers, { IAlertState } from './slices/alert.slice';
 import { FLUSH, REHYDRATE, PAUSE, PERSIST, REGISTER, PURGE, persistCombineReducers } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import autoMergeLevel2 from "redux-persist/es/stateReconciler/autoMergeLevel2";
 import localeReducers, { ILocaleState } from "./slices/locale.slice";
+import chatReducers, { IChatState } from "./slices/chat.slice";
 
 const persistConfig = {
     key: 'root',
@@ -15,11 +16,13 @@ const persistConfig = {
 };
 
 const persistedReducer = persistCombineReducers<{
-    alert: IAlertState,
-    locale: ILocaleState
+    // alert: IAlertState,
+    locale: ILocaleState,
+    chat: IChatState
 }>(persistConfig, {
-    alert: alertReducers,
-    locale: localeReducers
+    // alert: alertReducers,
+    locale: localeReducers,
+    chat: chatReducers
 });
 
 export const store = configureStore({

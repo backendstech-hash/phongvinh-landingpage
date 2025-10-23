@@ -5,6 +5,8 @@ import Header from "./components/shares/header";
 import Providers from "./provider";
 import Footer from "./components/shares/footer";
 import { Toaster } from "@/components/ui/sonner";
+import ChatBox from "./components/shares/chatBox";
+import InitSocket from "./components/shares/initSocket";
 
 // Import font bằng next/font/google
 const cormorant = Cormorant_Garamond({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-cormorant" });
@@ -28,6 +30,8 @@ export default function RootLayout({
           <Header />
           {children}
           <Toaster/>
+          <InitSocket/>
+          <ChatBox/>
           <Footer />
         </Providers>
       </body>

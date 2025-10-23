@@ -4,7 +4,7 @@ import Link from 'next/link';
 import './style.css';
 import { useAppSelector } from '../redux/hook';
 import { translations } from '../services/languages';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
