@@ -17,6 +17,15 @@ export default function ChatBox() {
     const { sessionId, username, messages } = useAppSelector(store => store.chat);
     const containerMessageRef = useRef<HTMLDivElement>(null);
 
+    useEffect(() => {
+        if (isOpen) {
+            const el = containerMessageRef.current;
+            if (el) {
+                el.scrollTop = el.scrollHeight; // scroll xuống cuối cùng
+            }
+        }
+    }, [isOpen])
+
     // ngăn scroll body khi mở box chat trên mobile
     useEffect(() => {
         if (!isOpen) {
@@ -48,6 +57,7 @@ export default function ChatBox() {
     }, [nameInput]);
 
     const handleKeyDown = useCallback((e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+        if (!messageInput.length) return;
         // Nếu nhấn Enter mà không giữ Shift → gửi tin nhắn
         if (e.key === "Enter" && !e.shiftKey) {
             e.preventDefault(); // Ngăn xuống dòng
@@ -58,84 +68,92 @@ export default function ChatBox() {
 
     const sendMessageHandle = useCallback(async (message: string) => {
         if (!sessionId || !username) return;
-        const el = containerMessageRef.current;
-        if (el) {
-            el.scrollTop = el.scrollHeight; // scroll xuống cuối cùng
-        }
         dispatch(pushNewMessage({fromMe: true, message }))
+        setTimeout(() => {
+            const el = containerMessageRef.current;
+            if (el) {
+                el.scrollTop = el.scrollHeight; // scroll xuống cuối cùng
+            }
+        }, 200);
         const sendRes = await sendMessageToThread(sessionId, `💬 ${username}: ${message}`);
         // console.log("sendRes: ", sendRes);
     }, [sessionId, username]);
 
 
     return <>
-        <div
-            className={`
-                fixed z-10 right-2 bottom-2 flex flex-col
-                bg-white border border-gray-300 shadow-xl rounded-md
-                transition-all duration-300 overflow-hidden
-                ${isOpen ? "w-[350px] h-[500px] max-sm:w-full max-sm:h-full max-sm:bottom-0 max-sm:right-0" : "w-[150px] h-[40px] !bg-blue-2 text-white"}
-            `}
-        >
-            <div className="flex h-fit justify-between items-center border-b-solid border-b-[1px] border-b-blue-3/20 p-2 cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
-                <p className="text-[16px] font-semibold font-poppins">Assistant</p>
-                {isOpen ? <PiX className="w-6 h-6" /> : <IoChatboxEllipsesOutline className="w-5 h-5 text-white my-auto" />}
-            </div>
+        {
+            isOpen ? 
+                <div
+                    className={`
+                        fixed z-10 right-2 bottom-2 flex flex-col
+                        bg-white border border-gray-300 shadow-xl rounded-md
+                        transition-all duration-300 overflow-hidden
+                        w-[350px] h-[500px] max-sm:w-full max-sm:h-full max-sm:bottom-0 max-sm:right-0
+                    `}
+                >
+                    <div className="flex h-fit justify-between items-center border-b-solid border-b-[1px] border-b-blue-3/20 p-2 cursor-pointer" onClick={() => setIsOpen(false)}>
+                        <p className="text-[16px] font-semibold font-poppins">Assistant</p>
+                        <PiX className="w-6 h-6" />
+                    </div>
 
-            {isOpen && (
-                <div className="flex-1 w-full flex flex-col items-center overflow-y-hidden">
-                    {/* Nội dung chatbox */}
-                    {
-                        (!sessionId || !username) ?
-                            <>
-                                <div className="max-auto border-b-solid py-2 mt-20 border-b-[1px] border-b-gray-500 w-[50%]">
-                                    <input value={nameInput} onChange={e => { if (e.target.value.length <= 20) { setNameInput(e.target.value) }}} className="w-full mx-auto border-none outline-none text-center text-[16px] font-poppins" placeholder="Nhập tên để bắt đầu"/>
-                                </div>
-                                <div className="text-white bg-blue-2 font-poppins px-3 rounded-md mt-2 font-semibold py-1 cursor-pointer hover:bg-blue-3" onClick={() => startChat()}>Chat</div>
-                            </>
-                            :
-                            <>
-                                <div className="flex-1 gap-2 w-full flex flex-col p-2 overflow-y-auto" ref={containerMessageRef}>
-                                    {
-                                        messages.map((i, index) => {
-                                            if (i.fromMe) {
-                                                return <div key={index} className="w-full flex justify-end">
-                                                    <div className="max-w-[80%] break-words p-2 flex flex-col gap-1 rounded-lg bg-[#e5f1ff] shadow-md text-black">
-                                                        <p className="font-poppins text-[16px]">{i.message}</p>
+                    {isOpen && (
+                        <div className="flex-1 w-full flex flex-col items-center overflow-y-hidden">
+                            {/* Nội dung chatbox */}
+                            {
+                                (!sessionId || !username) ?
+                                    <>
+                                        <div className="max-auto border-b-solid py-2 mt-20 border-b-[1px] border-b-gray-500 w-[50%]">
+                                            <input value={nameInput} onChange={e => { if (e.target.value.length <= 20) { setNameInput(e.target.value) }}} className="w-full mx-auto border-none outline-none text-center text-[16px] font-poppins" placeholder="Nhập tên để bắt đầu"/>
+                                        </div>
+                                        <div className="text-white bg-blue-2 font-poppins px-3 rounded-md mt-2 font-semibold py-1 cursor-pointer hover:bg-blue-3" onClick={() => startChat()}>Chat</div>
+                                    </>
+                                    :
+                                    <>
+                                        <div className="flex-1 gap-2 w-full flex flex-col p-2 overflow-y-auto" ref={containerMessageRef}>
+                                            {
+                                                messages.map((i, index) => {
+                                                    if (i.fromMe) {
+                                                        return <div key={index} className="w-full flex justify-end">
+                                                            <div className="max-w-[80%] break-words p-2 flex flex-col gap-1 rounded-lg bg-[#e5f1ff] shadow-md text-black">
+                                                                <p className="font-poppins text-[16px]">{i.message}</p>
+                                                            </div>
+                                                        </div>
+                                                    }
+                                                    return <div key={index} className="w-full">
+                                                        <div className="max-w-[80%] break-words p-2 flex flex-col gap-1 rounded-lg shadow-md bg-gray-100">
+                                                            <p className="font-poppins text-[16px] text-black">{i.message}</p>
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                })
                                             }
-                                            return <div key={index} className="w-full">
-                                                <div className="max-w-[80%] break-words p-2 flex flex-col gap-1 rounded-lg shadow-md bg-gray-100">
-                                                    <p className="font-poppins text-[16px] text-black">{i.message}</p>
-                                                </div>
+                                        </div>
+                                        <div className="flex flex-col w-full h-fit p-2">
+                                            <div className="flex w-full h-fit gap-1 border-y-gray-300">
+                                                <TextareaAutosize
+                                                    minRows={1}
+                                                    maxRows={6}
+                                                    value={messageInput}
+                                                    onKeyDown={handleKeyDown}
+                                                    onChange={e => setMessageInput(e.target.value)}
+                                                    className="w-full resize-none p-2 border-[1px] border-gray-300 outline-none rounded-md font-poppins"
+                                                    placeholder="Type your message..."
+                                                />
+                                                <VscSend className="w-8 h-8 mt-auto mb-[5px] text-black" onClick={() => {
+                                                    setMessageInput("");
+                                                    sendMessageHandle(messageInput);
+                                                }}/> 
                                             </div>
-                                        })
-                                    }
-                                </div>
-                                <div className="flex flex-col w-full h-fit p-2">
-                                    
-                                    <div className="flex w-full h-fit gap-1 border-y-gray-300">
-                                        
-                                        <TextareaAutosize
-                                            minRows={1}
-                                            maxRows={6}
-                                            value={messageInput}
-                                            onKeyDown={handleKeyDown}
-                                            onChange={e => setMessageInput(e.target.value)}
-                                            className="w-full resize-none p-2 border-[1px] border-gray-300 outline-none rounded-md font-poppins"
-                                            placeholder="Type your message..."
-                                        />
-                                        <VscSend className="w-8 h-8 mt-auto mb-[5px] text-black" onClick={() => {
-                                            setMessageInput("");
-                                            sendMessageHandle(messageInput);
-                                        }}/>
-                                    </div>
-                                </div>
-                            </>
-                    }
+                                        </div>
+                                    </>
+                            }
+                        </div>
+                    )}
                 </div>
-            )}
-        </div>
+                :
+                <div className="cursor-pointer w-fit gap-3 h-[40px] !bg-blue-2 rounded text-white flex p-2 justify-between fixed z-10 right-2 bottom-2" onClick={() => setIsOpen(true)}>
+                    <IoChatboxEllipsesOutline className="w-6 h-6 text-white my-auto" />
+                    <p className="text-[16px] font-semibold font-poppins my-auto">Assistant</p>
+                </div>
+        }
     </>
 }

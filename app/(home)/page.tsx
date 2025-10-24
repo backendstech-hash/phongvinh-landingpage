@@ -36,7 +36,7 @@ export default function Home() {
                         </div>
                         <p className='text-left font-poppins text-[16px] max-xl:text-sm text-brown-1'>{lang.home.SUBTITLE_2}</p>
                     </div>
-                    <iframe className='min-w-[40%] max-lg:w-full h-[400px]' width="600" height="400" src="https://www.youtube.com/embed/u-IhgutInoU?list=TLGG4sbLYQ1iTtEyMTEwMjAyNQ" title="Qiusuo – Your Reliable Wedge Wire Screen Manufacturer" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                    <iframe className='min-w-[40%] max-lg:w-full h-[400px]' width="600" height="400" src="https://www.youtube.com/embed/u-IhgutInoU?list=TLGG4sbLYQ1iTtEyNDEwMjAyNQ" title="Qiusuo – Your Reliable Wedge Wire Screen Manufacturer" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 </div>
             </div>
             <div className='w-full bg-white py-10 flex'>
