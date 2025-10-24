@@ -1,7 +1,7 @@
 "use server";
 
 // const sessions: Record<string, string> = {}; // username -> threadId
-const DISCORD_BOT_TOKEN = process.env.DISCORD_BOT_TOKEN;
+const DISCORD_BOT_TOKEN = process.env.DISCORD_BOT_TOKEN_CHAT;
 const DISCORD_CHANNEL_ID = process.env.DISCORD_CHANNEL_ID;
 
 export async function createThreadForUser(username: string) {
