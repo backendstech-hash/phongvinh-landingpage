@@ -46,7 +46,7 @@ export default function HomeCarousel() {
                 className="w-full"
             >
                 <SwiperSlide>
-                    <div className='w-full h-[700px] max-xl:h-[300px] max-sm:h-[350px] bg-cover flex justify-center bg-center bg-no-repeat relative' style={{ "backgroundImage": "url('/bg/bg4.webp')" }}>
+                    <div className='w-full h-[700px] max-xl:h-[300px] max-sm:h-[350px] bg-cover flex justify-center bg-center bg-no-repeat relative' style={{ "backgroundImage": "url('/bg/image.png')" }}>
                         <div className='absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/55 to-slate-900/25'></div>
                         <div className='flex flex-col gap-3 w-[75vw] max-xl:w-[95vw] my-auto'>
                             <div className='flex flex-col'>
@@ -59,9 +59,9 @@ export default function HomeCarousel() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='w-full h-[700px] max-xl:h-[300px] max-sm:h-[350px] bg-cover flex justify-center bg-center bg-no-repeat relative' style={{ "backgroundImage": "url('/bg/bg5.webp')" }}>
+                    <div className='w-full h-[700px] max-xl:h-[300px] max-sm:h-[350px] bg-cover flex justify-center bg-center bg-no-repeat relative' style={{ "backgroundImage": "url('/bg/image2.png')" }}>
                         <div className='absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/55 to-slate-900/25'></div>
-                        <div className='flex flex-col w-[75vw] max-xl:w-[95vw] my-auto'>
+                        <div className='flex flex-col gap-10 max-xl:gap-0 w-[75vw] max-xl:w-[95vw] my-auto'>
                             <div className='flex flex-col'>
                                 <p className='text-white font-poppins max-xl:text-2xl text-6xl font-bold z-10 text-left leading-[20px] max-xl:text-center'>{lang.home.BANNER_TITLE_2}</p>
                                 <p className='block z-10 max-xl:text-lg font-poppins max-xl:w-[80%] max-xl:mx-auto font-medium italic leading-[80px] text-2xl text-transparent max-xl:text-center bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400'>{lang.home.BANNER_SUBTITLE_2}</p>
@@ -71,9 +71,9 @@ export default function HomeCarousel() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='w-full h-[700px] max-xl:h-[300px] max-sm:h-[350px] bg-cover flex justify-center bg-center bg-no-repeat relative' style={{ "backgroundImage": "url('/bg/bg6.webp')" }}>
+                    <div className='w-full h-[700px] max-xl:h-[300px] max-sm:h-[350px] bg-cover flex justify-center bg-center bg-no-repeat relative' style={{ "backgroundImage": "url('/bg/image3.png')" }}>
                         <div className='absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/55 to-slate-900/25'></div>
-                        <div className='flex flex-col w-[75vw] max-xl:w-[95vw] my-auto'>
+                        <div className='flex flex-col gap-10 max-xl:gap-0 w-[75vw] max-xl:w-[95vw] my-auto'>
                             <div className='flex flex-col'>
                                 <p className='text-white font-poppins max-xl:text-2xl max-xl:text-center text-6xl font-bold z-10 text-left leading-[20px]'>{lang.home.BANNER_TITLE_3}</p>
                                 <p className='block z-10 max-xl:text-lg font-poppins font-medium italic max-xl:w-[80%] max-xl:text-center max-xl:mx-auto leading-[80px] text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400'>{lang.home.BANNER_SUBTITLE_3}</p>
@@ -82,7 +82,7 @@ export default function HomeCarousel() {
                         </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide>
+                {/* <SwiperSlide>
                     <div className='w-full h-[700px] max-xl:h-[300px] max-sm:h-[350px] bg-cover flex justify-center bg-center bg-no-repeat relative' style={{ "backgroundImage": "url('/bg/bg7.webp')" }}>
                         <div className='absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/55 to-slate-900/25'></div>
                         <div className='flex flex-col w-[75vw] max-xl:w-[95vw] my-auto'>
@@ -93,7 +93,7 @@ export default function HomeCarousel() {
                             <div className='px-5 py-2 max-xl:mt-4 text-sm rounded-lg text-white max-xl:text-xs bg-gradient-to-r from-blue-500 to-cyan-500 w-fit h-fit z-10 font-bold max-xl:mx-auto uppercase'>{lang.home.CONTACT_US}</div>
                         </div>
                     </div>
-                </SwiperSlide>
+                </SwiperSlide> */}
             </Swiper>
         </div>
     );

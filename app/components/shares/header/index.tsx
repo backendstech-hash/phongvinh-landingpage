@@ -56,22 +56,22 @@ export default function Header() {
                             <div className="bg-gray-100 shadow-lg py-6  w-full border">
                                 <div className='grid grid-cols-5 gap-6 w-[75vw] max-2xl:w-[95vw] mx-auto'>
                                     <div className='col-span-1 flex p-3 gap-5 bg-white cursor-pointer text-brown-1 hover:text-blue-1'>
-                                        <Image src={'/menuItem/item1.svg'} alt={lang.header.PRODUCT_1} className='w-[60px] h-[60px] my-auto' width={30} height={30}/>
+                                        <Image src={'/menuItem/image.png'} alt={lang.header.PRODUCT_1} className='w-[48px] h-[48px] my-auto' width={48} height={48}/>
                                         <p className='w-full text-[16px] font-poppins my-auto'>{lang.header.PRODUCT_1}</p>
                                     </div>
                                     <div className='col-span-1 flex p-3 gap-3 bg-white cursor-pointer text-brown-1 hover:text-blue-1'>
-                                        <Image src={'/menuItem/item2.svg'} alt={lang.header.PRODUCT_2} className='my-auto' width={70} height={100}/>
+                                        <Image src={'/menuItem/image1.png'} alt={lang.header.PRODUCT_2} className='my-auto' width={60} height={60}/>
                                         <p className='w-full text-[16px] my-auto font-poppins'>{lang.header.PRODUCT_2}</p>
                                     </div>
                                     <div className='col-span-1 flex p-3 gap-5 bg-white cursor-pointer text-brown-1 hover:text-blue-1'>
-                                        <Image src={'/menuItem/item3.svg'} alt={lang.header.PRODUCT_3} className='w-[60px] h-[60px] my-auto' width={30} height={30}/>
+                                        <Image src={'/menuItem/image2.png'} alt={lang.header.PRODUCT_3} className='w-[50px] h-[50px] my-auto' width={50} height={50}/>
                                         <p className='w-full text-[16px] font-poppins my-auto'>{lang.header.PRODUCT_3}</p>
                                     </div>
                                     <div className='col-span-1 flex p-3 gap-5 bg-white cursor-pointer text-brown-1 hover:text-blue-1'>
-                                        <Image src={'/menuItem/item4.svg'} alt={lang.header.PRODUCT_4} className='my-auto ml-2' width={50} height={50}/>
+                                        <Image src={'/menuItem/image4.png'} alt={lang.header.PRODUCT_4} className='my-auto ml-2' width={60} height={60}/>
                                         <p className='w-full text-[16px] my-auto font-poppins'>{lang.header.PRODUCT_4}</p>
                                     </div>
-                                    <div className='col-span-1 flex p-3 gap-5 bg-white cursor-pointer text-brown-1 hover:text-blue-1'>
+                                    {/* <div className='col-span-1 flex p-3 gap-5 bg-white cursor-pointer text-brown-1 hover:text-blue-1'>
                                         <Image src={'/menuItem/item5.svg'} alt={lang.header.PRODUCT_5} className='my-auto' width={60} height={60}/>
                                         <p className='w-full text-[16px] my-auto font-poppins'>{lang.header.PRODUCT_5}</p>
                                     </div>
@@ -110,7 +110,7 @@ export default function Header() {
                                     <div className='col-span-1 flex p-3 gap-6 bg-white cursor-pointer text-brown-1 hover:text-blue-1'>
                                         <Image src={'/menuItem/item14.svg'} alt={lang.header.PRODUCT_14} className='my-auto ml-3' width={40} height={40}/>
                                         <p className='w-full text-[16px] font-poppins my-auto'>{lang.header.PRODUCT_14}</p>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>

@@ -67,21 +67,21 @@ export default function RightSidebarMobile() {
                             )
                         }
                     </p>
-                    <div className={`transition-all duration-300 overflow-hidden min-h-[460px] ${openProduct ? "max-h-[460px] -my-2" : "!max-h-0 !min-h-0 -my-2"}`}>
-                        <div className="w-full min-h-[460px] flex flex-col gap-3 bg-gray-100 p-3">
+                    <div className={`transition-all duration-300 overflow-hidden min-h-[140px] ${openProduct ? "max-h-[140px] -my-2" : "!max-h-0 !min-h-0 -my-2"}`}>
+                        <div className="w-full min-h-[140px] flex flex-col gap-3 bg-gray-100 p-3">
                             <div className="flex gap-3 text-brown-1 hover:text-blue-1 text-sm cursor-pointer">
-                                <Image src={'/menuItem/item1.svg'} className="h-5" alt={lang.header.PRODUCT_1} width={20} height={20}/> <p className="truncate">{lang.header.PRODUCT_1}</p>
+                                <Image src={'/menuItem/image.png'} className="h-5" alt={lang.header.PRODUCT_1} width={20} height={20}/> <p className="truncate">{lang.header.PRODUCT_1}</p>
                             </div>
                             <div className="flex gap-3 text-brown-1 hover:text-blue-1 text-sm cursor-pointer">
-                                <Image src={'/menuItem/item2.svg'} className="h-5" alt={lang.header.PRODUCT_2} width={20} height={20}/> <p className="truncate">{lang.header.PRODUCT_2}</p>
+                                <Image src={'/menuItem/image1.png'} className="h-5" alt={lang.header.PRODUCT_2} width={20} height={20}/> <p className="truncate">{lang.header.PRODUCT_2}</p>
                             </div>
                             <div className="flex gap-3 text-brown-1 hover:text-blue-1 text-sm cursor-pointer">
-                                <Image src={'/menuItem/item3.svg'} className="h-5" alt={lang.header.PRODUCT_3} width={20} height={20}/> <p className="truncate">{lang.header.PRODUCT_3}</p>
+                                <Image src={'/menuItem/image2.png'} className="h-5" alt={lang.header.PRODUCT_3} width={20} height={20}/> <p className="truncate">{lang.header.PRODUCT_3}</p>
                             </div>
                             <div className="flex gap-3 text-brown-1 hover:text-blue-1 text-sm cursor-pointer">
-                                <Image src={'/menuItem/item4.svg'} className="h-5" alt={lang.header.PRODUCT_4} width={20} height={20}/> <p className="truncate">{lang.header.PRODUCT_4}</p>
+                                <Image src={'/menuItem/image4.png'} className="h-5" alt={lang.header.PRODUCT_4} width={20} height={20}/> <p className="truncate">{lang.header.PRODUCT_4}</p>
                             </div>
-                            <div className="flex gap-3 text-brown-1 hover:text-blue-1 text-sm cursor-pointer">
+                            {/* <div className="flex gap-3 text-brown-1 hover:text-blue-1 text-sm cursor-pointer">
                                 <Image src={'/menuItem/item5.svg'} className="h-5" alt={lang.header.PRODUCT_5} width={20} height={20}/> <p className="truncate">{lang.header.PRODUCT_5}</p>
                             </div>
                             <div className="flex gap-3 text-brown-1 hover:text-blue-1 text-sm cursor-pointer">
@@ -110,7 +110,7 @@ export default function RightSidebarMobile() {
                             </div>
                             <div className="flex gap-3 text-brown-1 hover:text-blue-1 text-sm cursor-pointer">
                                 <Image src={'/menuItem/item14.svg'} className="h-5" alt={lang.header.PRODUCT_14} width={20} height={20}/> <p className="truncate">{lang.header.PRODUCT_14}</p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <p className="cursor-pointer text-brown-1 text-left flex justify-between" onClick={() => setOpenService(!openService)}>{lang.header.NEWS}

@@ -27,14 +27,29 @@ export async function createThreadForUser(username: string) {
     return data.id; // threadId
 }
 
-export async function sendMessageToThread(threadId: string, message: string) {
-    const res = await fetch(`https://discord.com/api/v10/channels/${threadId}/messages`, {
+export async function sendMessageToThread(threadId: string, message: string, username: string, replyForBotId?: number, optionId?: number) {
+    // http://discord.com/api/v10/channels/${threadId}/messages
+    const res = await fetch(`http://localhost:3001/message/send`, {
         method: "POST",
         headers: {
-            "Authorization": `Bot ${DISCORD_BOT_TOKEN}`,
             "Content-Type": "application/json",
         },
-        body: JSON.stringify({ content: message }),
+        body: JSON.stringify({ message, threadId, username, replyForBotId, optionId }),
+    });
+
+    if (!res.ok) {
+        const err = await res.text();
+        throw new Error(`Failed to send message: ${err}`);
+    }
+
+    return await res.json();
+}
+
+export async function sendFormToThread(data: FormData) {
+    // http://discord.com/api/v10/channels/${threadId}/messages
+    const res = await fetch("http://localhost:3001/message/send-form", {
+        method: "POST",
+        body: data,
     });
 
     if (!res.ok) {

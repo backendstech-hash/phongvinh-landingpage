@@ -6,23 +6,26 @@ import storage from 'redux-persist/lib/storage';
 import autoMergeLevel2 from "redux-persist/es/stateReconciler/autoMergeLevel2";
 import localeReducers, { ILocaleState } from "./slices/locale.slice";
 import chatReducers, { IChatState } from "./slices/chat.slice";
+import messageChatReducers, { IMessageChatState } from "./slices/messageChat.slice";
 
 const persistConfig = {
     key: 'root',
     storage,
     version: 1,
     stateReconciler: autoMergeLevel2,
-    blacklist: []
+    blacklist: ['messageChat']
 };
 
 const persistedReducer = persistCombineReducers<{
     // alert: IAlertState,
     locale: ILocaleState,
-    chat: IChatState
+    chat: IChatState,
+    messageChat: IMessageChatState
 }>(persistConfig, {
     // alert: alertReducers,
     locale: localeReducers,
-    chat: chatReducers
+    chat: chatReducers,
+    messageChat: messageChatReducers
 });
 
 export const store = configureStore({

@@ -34,8 +34,8 @@ export default function Footer() {
                 </div>
                 <div className='flex justify-between gap-8 max-lg:flex-col mt-5'>
                     <div className='flex flex-col gap-6 justify-between'>
-                        <p className='uppercase font-poppins text-white font-semibold w-[70%] max-sm:w-full text-xl'>{lang.footer.TITLE}</p>
-                        <div className='flex gap-2'>
+                        <p className='uppercase font-poppins text-white font-semibold max-sm:w-full text-xl'>{lang.footer.TITLE}</p>
+                        {/* <div className='flex gap-2'>
                             <p className='text-white font-poppins text-sm my-auto'>{lang.footer.FOLLOW_US}</p>
                             <div className='flex flex-col justify-center items-center rounded-full p-2 border-white border-solid border-[1px] my-auto bg-blue-2 hover:bg-blue-3 cursor-pointer'>
                                 <TfiLinkedin className='w-4 h-4 text-white'/>
@@ -49,14 +49,14 @@ export default function Footer() {
                             <div className='flex flex-col justify-center items-center rounded-full p-2 border-white border-solid border-[1px] my-auto bg-blue-2 hover:bg-blue-3 cursor-pointer'>
                                 <FaYoutube className='w-4 h-4 text-white'/>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="text-white rounded-md space-y-2 text-[16px] leading-relaxed">
                         <p>
-                            <span className="font-medium">Mobile:</span>{" "}
-                            +86-18703384586 <span className="opacity-80">(WeChat/WhatsApp)</span>
+                            <span className="font-medium">Hotline/Zalo/WhatsApp:</span>{" "}
+                            0906 630 237
                         </p>
-                        <p>
+                        {/* <p>
                             <span className="font-medium">Tel:</span> +86-318-5183833
                         </p>
                         <p>
@@ -76,14 +76,14 @@ export default function Footer() {
                             >
                             sales@wedgewire-screen.com
                             </a>
-                        </p>
+                        </p> */}
                     </div>
                 </div>
             </div>
         </div>
         <div className='w-full flex bg-blue-4 py-4'>
             <div className='w-[75vw] max-xl:w-[95vw] flex justify-between max-sm:flex-col mx-auto'>
-                <p className='text-sm text-white font-poppins'>Copyright © 1998 - 2025 Hebei Qiusuo Wire Mesh Products Co., Ltd.</p>
+                <p className='text-sm text-white font-poppins'>Copyright © 2025 Phong Vĩnh Water & Wastewater Solutions. All rights reserved.</p>
                 <div className='flex gap-2 text-white'>
                     <p className='text-sm text-white font-poppins underline'>Privacy Policy</p> | <p className='text-sm text-white font-poppins underline'>Terms & Conditions</p>
                 </div>

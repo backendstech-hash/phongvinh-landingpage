@@ -6,7 +6,7 @@ export async function sendDiscordMessage(data: {
   phone: string;
   message: string;
 }) {
-    const DISCORD_BOT_TOKEN = process.env.DISCORD_BOT_TOKEN;
+    const DISCORD_BOT_TOKEN = process.env.DISCORD_BOT_TOKEN_CONTACT;
     const DISCORD_CHANNEL_ID = process.env.DISCORD_CHANNEL_ID;
 
     if (!DISCORD_BOT_TOKEN) {

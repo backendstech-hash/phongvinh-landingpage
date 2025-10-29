@@ -4,13 +4,11 @@ import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 export interface IChatState {
     username?: string
     sessionId?: string;
-    messages: { fromMe: boolean, message: string }[]
 }
 
 export const initialState: IChatState = {
     username: undefined,
-    sessionId: undefined,
-    messages: []
+    sessionId: undefined
 };
 
 const chatSlice = createSlice({
@@ -20,16 +18,12 @@ const chatSlice = createSlice({
         resetStateChat: () => {
             return initialState;
         },
-        setUsername: (state, _action: PayloadAction<string>) => {
+        setUsername: (state, _action: PayloadAction<string | undefined>) => {
             state.username = _action.payload;
             return state;
         },
-        setSessionId: (state, _action: PayloadAction<string>) => {
+        setSessionId: (state, _action: PayloadAction<string | undefined>) => {
             state.sessionId = _action.payload;
-            return state;
-        },
-        pushNewMessage: (state, _action: PayloadAction<{ fromMe: boolean, message: string }>) => {
-            state.messages = [ ...state.messages, _action.payload ];
             return state;
         }
     }
@@ -38,8 +32,7 @@ const chatSlice = createSlice({
 export const {
     setUsername,
     setSessionId,
-    resetStateChat,
-    pushNewMessage
+    resetStateChat
 } = chatSlice.actions;
 export default chatSlice.reducer;
 
