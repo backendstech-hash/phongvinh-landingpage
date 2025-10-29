@@ -31,10 +31,10 @@ export default function Home() {
                     <div className='flex relative mx-auto'>
                         <div className="h--main2">
                             <div className="h-b2 overflow-hidden max-w-[95dvw] left-1/2 -translate-x-1/2">POLITE</div>
-                            <div className="h2-tit2 font-poppins mt-3 text-4xl max-xl:text-2xl text-brown-1 font-extrabold">Cam kết dịch vụ</div>
+                            <div className="h2-tit2 font-poppins mt-3 text-4xl max-xl:text-2xl text-brown-1 font-extrabold">{lang.home.TITLE_7}</div>
                         </div>
                     </div>
-                    <p className='text-center text-[20px] max-xl:text-[16px] text-brown-1 font-poppins'>Phong Vĩnh cam kết mang đến cho khách hàng sản phẩm chất lượng cao cùng dịch vụ tận tâm – từ tư vấn đến bảo hành.</p>
+                    <p className='text-center text-[20px] max-xl:text-[16px] text-brown-1 font-poppins'>{lang.home.TITLE_7}</p>
                 </div>
                 <div className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <FeatureCard
@@ -78,7 +78,7 @@ export default function Home() {
                         <div className='min-h-[70px] flex gap-2 justify-center items-center bg-gray-100 px-3'>
                             <Image src={'/menuItem/image.png'} className='max-lg:w-[50px]' alt='item1' width={45} height={45}/><p className='text-brown-1 font-poppins text-lg font-semibold max-lg:text-sm'>{lang.home.PRODUCT_1}</p>
                         </div>
-                        <p className='w-full bg-gray-100 p-4 pt-0 h-[90px] max-sm:h-[100px]'>Đảm bảo nguồn nước tinh khiết cho ăn uống và sinh hoạt hàng ngày.</p>
+                        <p className='w-full bg-gray-100 p-4 pt-0 h-[90px] max-sm:h-[100px]'>{lang.home.PRODUCT_TITLE_1}</p>
                     </div>
                     <div className='flex flex-col h-auto col-span-1 cursor-pointer'>
                         <div className='flex-1 overflow-hidden'>
@@ -87,7 +87,7 @@ export default function Home() {
                         <div className='min-h-[70px] flex gap-2 justify-center items-center  bg-gray-100 px-3'>
                             <Image src={'/menuItem/image1.png'} alt='item1' width={60} height={60}/><p className='text-brown-1 font-poppins text-lg font-semibold max-lg:text-sm'>{lang.home.PRODUCT_2}</p>
                         </div>
-                        <p className='w-full bg-gray-100 p-4 pt-0 h-[90px] max-sm:h-[100px]'>Bảo vệ toàn bộ đường ống, thiết bị và sức khỏe người dùng từ nguồn nước đầu vào.</p>
+                        <p className='w-full bg-gray-100 p-4 pt-0 h-[90px] max-sm:h-[100px]'>{lang.home.PRODUCT_TITLE_2}</p>
                     </div>
                     <div className='flex flex-col h-auto col-span-1 cursor-pointer'>
                         <div className='flex-1 overflow-hidden'>
@@ -96,7 +96,7 @@ export default function Home() {
                         <div className='min-h-[70px] flex gap-2 justify-center items-center bg-gray-100 px-3'>
                             <Image src={'/menuItem/image3.png'} className='max-lg:w-[50px] max-lg:h-[50px]' alt='item1' width={50} height={50}/><p className='text-brown-1 font-poppins text-lg font-semibold max-lg:text-sm'>{lang.home.PRODUCT_3}</p>
                         </div>
-                        <p className='w-full bg-gray-100 p-4 pt-0 h-[90px] max-sm:h-[100px]'>Giải pháp chuyên sâu cho nhà máy, xưởng sản xuất, khu công nghiệp và công trình.</p>
+                        <p className='w-full bg-gray-100 p-4 pt-0 h-[90px] max-sm:h-[100px]'>{lang.home.PRODUCT_TITLE_3}</p>
                     </div>
                     <div className='flex flex-col h-auto col-span-1 cursor-pointer'>
                         <div className='flex-1 overflow-hidden'>
@@ -105,7 +105,7 @@ export default function Home() {
                         <div className='min-h-[70px] flex gap-2 justify-center items-center bg-gray-100 px-3'>
                             <Image src={'/menuItem/image4.png'} className='max-lg:w-[50px] max-lg:h-[50px]' alt='item1' width={60} height={60}/><p className='max-lg:text-sm text-brown-1 font-poppins text-lg font-semibold'>{lang.home.PRODUCT_4}</p>
                         </div>
-                        <p className='w-full bg-gray-100 p-4 pt-0 h-[90px] max-sm:h-[100px]'>Cung cấp lõi lọc, màng RO, van, bơm, bình lọc… chất lượng cao – giá cạnh tranh.</p>
+                        <p className='w-full bg-gray-100 p-4 pt-0 h-[90px] max-sm:h-[100px]'>{lang.home.PRODUCT_TITLE_4}</p>
                     </div>
                 </div>
             </div>
