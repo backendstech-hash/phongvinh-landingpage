@@ -47,7 +47,7 @@ const ReusableForm: React.FC<ReusableFormProps> = ({
     watch,
     formState: { errors, isSubmitting },
   } = useForm<FormValues>({
-    resolver: yupResolver(schema),
+    resolver: yupResolver(schema) as any,
   });
 
   // ✅ Lắng nghe thay đổi ảnh để preview
