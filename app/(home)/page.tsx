@@ -14,6 +14,28 @@ export default function Home() {
     const { locale } = useAppSelector(storage => storage.locale);
 
     const lang = translations[locale];
+    const items = [
+  {
+    src: "/products/product1.webp",
+    title: lang.home.PRODUCT_1,
+    desc: lang.home.PRODUCT_TITLE_1
+  },
+  {
+    src: "/products/product2.webp",
+    title: lang.home.PRODUCT_2,
+    desc: lang.home.PRODUCT_TITLE_2
+  },
+  {
+    src: "/products/product3.webp",
+    title: lang.home.PRODUCT_3,
+    desc: lang.home.PRODUCT_TITLE_3
+  },
+  {
+    src: "/products/product4.webp",
+    title: lang.home.PRODUCT_4,
+    desc: lang.home.PRODUCT_TITLE_4
+  }
+];
 
     return (
         <div className="w-full h-full bg-white">
@@ -34,7 +56,7 @@ export default function Home() {
                             <div className="h2-tit2 font-poppins mt-3 text-4xl max-xl:text-2xl text-brown-1 font-extrabold">{lang.home.TITLE_7}</div>
                         </div>
                     </div>
-                    <p className='text-center text-[20px] max-xl:text-[16px] text-brown-1 font-poppins'>{lang.home.TITLE_7}</p>
+                    <p className='text-center text-[20px] max-xl:text-[16px] text-brown-1 font-poppins'>{lang.home.SUBTITLE_7}</p>
                 </div>
                 <div className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <FeatureCard
@@ -70,43 +92,26 @@ export default function Home() {
                 </div>
             </div>
             <div className='w-full h-fit flex pb-5'>
-                <div className='w-[95dvw] grid grid-cols-4 max-xl:grid-cols-2 gap-5 max-sm:gap-3 mx-auto'>
-                    <div className='flex flex-col h-auto col-span-1 cursor-pointer'>
-                        <div className='flex-1 overflow-hidden'>
-                            <Image src={'/products/product1.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-\[cubic-bezier\(0\.25,0\.1,0\.25,1\)\] hover:scale-110' alt='product1' width={444} height={444}/>
+                <div className="w-[95dvw] mx-auto grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-sm:gap-3">
+                    {items.map((item, idx) => (
+                    <div
+                        key={idx}
+                        className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-[103%] cursor-pointer"
+                    >
+                        <div className="relative w-full h-60">
+                        <Image
+                            src={item.src}
+                            alt={item.title}
+                            fill
+                            className="object-cover"
+                        />
                         </div>
-                        <div className='min-h-[70px] flex gap-2 justify-center items-center bg-gray-100 px-3'>
-                            <Image src={'/menuItem/image.png'} className='max-lg:w-[50px]' alt='item1' width={45} height={45}/><p className='text-brown-1 font-poppins text-lg font-semibold max-lg:text-sm'>{lang.home.PRODUCT_1}</p>
+                        <div className="p-4">
+                        <h3 className="font-semibold text-sm sm:text-lg font-poppins">{item.title}</h3>
+                        <p className="mt-2 text-gray-600 text-sm sm:text-base font-poppins">{item.desc}</p>
                         </div>
-                        <p className='w-full bg-gray-100 p-4 pt-0 h-[90px] max-sm:h-[100px]'>{lang.home.PRODUCT_TITLE_1}</p>
                     </div>
-                    <div className='flex flex-col h-auto col-span-1 cursor-pointer'>
-                        <div className='flex-1 overflow-hidden'>
-                            <Image src={'/products/product2.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-\[cubic-bezier\(0\.25,0\.1,0\.25,1\)\] hover:scale-110' alt='product1' width={444} height={444}/>
-                        </div>
-                        <div className='min-h-[70px] flex gap-2 justify-center items-center  bg-gray-100 px-3'>
-                            <Image src={'/menuItem/image1.png'} alt='item1' width={60} height={60}/><p className='text-brown-1 font-poppins text-lg font-semibold max-lg:text-sm'>{lang.home.PRODUCT_2}</p>
-                        </div>
-                        <p className='w-full bg-gray-100 p-4 pt-0 h-[90px] max-sm:h-[100px]'>{lang.home.PRODUCT_TITLE_2}</p>
-                    </div>
-                    <div className='flex flex-col h-auto col-span-1 cursor-pointer'>
-                        <div className='flex-1 overflow-hidden'>
-                            <Image src={'/products/product3.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-\[cubic-bezier\(0\.25,0\.1,0\.25,1\)\] hover:scale-110' alt='product1' width={444} height={444}/>
-                        </div>
-                        <div className='min-h-[70px] flex gap-2 justify-center items-center bg-gray-100 px-3'>
-                            <Image src={'/menuItem/image3.png'} className='max-lg:w-[50px] max-lg:h-[50px]' alt='item1' width={50} height={50}/><p className='text-brown-1 font-poppins text-lg font-semibold max-lg:text-sm'>{lang.home.PRODUCT_3}</p>
-                        </div>
-                        <p className='w-full bg-gray-100 p-4 pt-0 h-[90px] max-sm:h-[100px]'>{lang.home.PRODUCT_TITLE_3}</p>
-                    </div>
-                    <div className='flex flex-col h-auto col-span-1 cursor-pointer'>
-                        <div className='flex-1 overflow-hidden'>
-                            <Image src={'/products/product4.webp'} className='w-full h-auto will-change-transform transform transition-transform duration-500 ease-\[cubic-bezier\(0\.25,0\.1,0\.25,1\)\] hover:scale-110' alt='product1' width={444} height={444}/>
-                        </div>
-                        <div className='min-h-[70px] flex gap-2 justify-center items-center bg-gray-100 px-3'>
-                            <Image src={'/menuItem/image4.png'} className='max-lg:w-[50px] max-lg:h-[50px]' alt='item1' width={60} height={60}/><p className='max-lg:text-sm text-brown-1 font-poppins text-lg font-semibold'>{lang.home.PRODUCT_4}</p>
-                        </div>
-                        <p className='w-full bg-gray-100 p-4 pt-0 h-[90px] max-sm:h-[100px]'>{lang.home.PRODUCT_TITLE_4}</p>
-                    </div>
+                    ))}
                 </div>
             </div>
             {/* <div className='w-full bg-gray-100 py-[80px] flex flex-col'>
