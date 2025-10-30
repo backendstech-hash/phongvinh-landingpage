@@ -98,7 +98,7 @@ export default function Home() {
                         key={idx}
                         className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-[103%] cursor-pointer"
                     >
-                        <div className="relative w-full h-60">
+                        <div className="relative w-full h-[290px]">
                         <Image
                             src={item.src}
                             alt={item.title}
