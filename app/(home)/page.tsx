@@ -16,22 +16,22 @@ export default function Home() {
     const lang = translations[locale];
     const items = [
   {
-    src: "/products/product1.webp",
+    src: "/products/product26.webp",
     title: lang.home.PRODUCT_1,
     desc: lang.home.PRODUCT_TITLE_1
   },
   {
-    src: "/products/product2.webp",
+    src: "/products/product27.webp",
     title: lang.home.PRODUCT_2,
     desc: lang.home.PRODUCT_TITLE_2
   },
   {
-    src: "/products/product3.webp",
+    src: "/products/product28.webp",
     title: lang.home.PRODUCT_3,
     desc: lang.home.PRODUCT_TITLE_3
   },
   {
-    src: "/products/product4.webp",
+    src: "/products/product29.webp",
     title: lang.home.PRODUCT_4,
     desc: lang.home.PRODUCT_TITLE_4
   }
