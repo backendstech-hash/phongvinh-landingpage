@@ -107,7 +107,7 @@ export default function Home() {
                             src={item.icon}
                             alt={item.title}
                             fill
-                            className="object-fill p-2"
+                            className="object-fill p-12"
                         />
                         </div>
                         <div className="p-4">
