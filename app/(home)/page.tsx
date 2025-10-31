@@ -96,18 +96,19 @@ export default function Home() {
                 </div>
             </div>
             <div className='w-full h-fit flex pb-5'>
-                <div className="w-[95dvw] mx-auto grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-sm:gap-3">
+                <div className="w-[75vw] max-xl:w-[95dvw] mx-auto grid max-xl:grid-cols-2 grid-cols-4 gap-5 max-sm:gap-3">
                     {items.map((item, idx) => (
                     <div
                         key={idx}
                         className="bg-white rounded-lg shadow-sm border-solid border-[1px] border-black/10 overflow-hidden transform transition duration-300 hover:scale-[103%] cursor-pointer"
                     >
-                        <div className="relative w-full h-[290px] max-sm:h-[200px]">
+                        <div className="relative w-full h-[290px] flex justify-center items-center max-sm:h-[200px]">
                         <Image
                             src={item.icon}
                             alt={item.title}
-                            fill
-                            className="object-fill p-12 max-sm:p-5"
+                            width={250}
+                            height={250}
+                            className="w-[60%] h-auto mx-auto my-auto"
                         />
                         </div>
                         <div className="p-4">
