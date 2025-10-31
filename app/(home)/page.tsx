@@ -96,7 +96,7 @@ export default function Home() {
                 </div>
             </div>
             <div className='w-full h-fit flex pb-5'>
-                <div className="w-[75vw] max-xl:w-[95dvw] mx-auto grid max-xl:grid-cols-2 grid-cols-4 gap-5 max-sm:gap-3">
+                <div className="w-[75vw] max-xl:w-[95dvw] mx-auto grid max-xl:grid-cols-2 max-sm:grid-cols-1 grid-cols-4 gap-5 max-sm:gap-3">
                     {items.map((item, idx) => (
                     <div
                         key={idx}
@@ -108,7 +108,7 @@ export default function Home() {
                             alt={item.title}
                             width={250}
                             height={250}
-                            className="w-[60%] h-auto mx-auto my-auto"
+                            className="h-[80%] w-auto mx-auto my-auto p-2"
                         />
                         </div>
                         <div className="p-4">
