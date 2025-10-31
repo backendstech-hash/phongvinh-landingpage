@@ -100,7 +100,7 @@ export default function Home() {
                     {items.map((item, idx) => (
                     <div
                         key={idx}
-                        className="bg-white rounded-lg shadow-sm border-solid border-[1px] border-black/10 overflow-hidden transform transition duration-300 hover:scale-[103%] cursor-pointer"
+                        className="bg-white rounded-lg hover:shadow-md border-solid border-[1px] border-black/10 overflow-hidden transform transition duration-300 hover:scale-[103%] cursor-pointer"
                     >
                         <div className="relative w-full h-[290px] flex justify-center items-center max-sm:h-[200px]">
                         <Image
