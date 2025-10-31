@@ -15,27 +15,31 @@ export default function Home() {
 
     const lang = translations[locale];
     const items = [
-  {
-    src: "/products/product26.webp",
-    title: lang.home.PRODUCT_1,
-    desc: lang.home.PRODUCT_TITLE_1
-  },
-  {
-    src: "/products/product27.webp",
-    title: lang.home.PRODUCT_2,
-    desc: lang.home.PRODUCT_TITLE_2
-  },
-  {
-    src: "/products/product28.webp",
-    title: lang.home.PRODUCT_3,
-    desc: lang.home.PRODUCT_TITLE_3
-  },
-  {
-    src: "/products/product29.webp",
-    title: lang.home.PRODUCT_4,
-    desc: lang.home.PRODUCT_TITLE_4
-  }
-];
+        {
+            icon: "/menuItem/image.png",
+            src: "/products/product26.webp",
+            title: lang.home.PRODUCT_1,
+            desc: lang.home.PRODUCT_TITLE_1
+        },
+        {
+            icon: "/menuItem/image1.png",
+            src: "/products/product27.webp",
+            title: lang.home.PRODUCT_2,
+            desc: lang.home.PRODUCT_TITLE_2
+        },
+        {
+            icon: "/menuItem/image2.png",
+            src: "/products/product28.webp",
+            title: lang.home.PRODUCT_3,
+            desc: lang.home.PRODUCT_TITLE_3
+        },
+        {
+            icon: "/menuItem/image4.png",
+            src: "/products/product29.webp",
+            title: lang.home.PRODUCT_4,
+            desc: lang.home.PRODUCT_TITLE_4
+        }
+    ];
 
     return (
         <div className="w-full h-full bg-white">
@@ -107,7 +111,7 @@ export default function Home() {
                         />
                         </div>
                         <div className="p-4">
-                        <h3 className="font-semibold text-sm sm:text-lg font-poppins">{item.title}</h3>
+                        <h3 className="font-semibold text-sm sm:text-lg font-poppins flex gap-1"><Image className='w-[40px] h-[40px]' src={item.icon} width={35} height={35} alt=''/><p className='my-auto'>{item.title}</p></h3>
                         <p className="mt-2 text-gray-600 text-sm sm:text-base font-poppins">{item.desc}</p>
                         </div>
                     </div>
