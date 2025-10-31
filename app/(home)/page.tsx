@@ -104,14 +104,14 @@ export default function Home() {
                     >
                         <div className="relative w-full h-[290px]">
                         <Image
-                            src={item.src}
+                            src={item.icon}
                             alt={item.title}
                             fill
-                            className="object-cover"
+                            className="object-fill p-2"
                         />
                         </div>
                         <div className="p-4">
-                        <h3 className="font-semibold text-sm sm:text-lg font-poppins flex gap-1"><Image className='w-[40px] h-[40px]' src={item.icon} width={35} height={35} alt=''/><p className='my-auto'>{item.title}</p></h3>
+                        <h3 className="font-semibold text-sm sm:text-lg font-poppins">{item.title}</h3>
                         <p className="mt-2 text-gray-600 text-sm sm:text-base font-poppins">{item.desc}</p>
                         </div>
                     </div>
